@@ -1,2 +1,6 @@
-print(", ".join("{:02d}".format(i) for i in range(0,100)), end=" ")
+for a in range(0,100,1):
+    if a < 10:
+         print("0{}".format(a), end=", ")
+    elif a>=10:
+        print(a, end=", ")
     
