@@ -12,3 +12,5 @@ else if number < 0:
 
     else:
     print(number, "is zero")
+
+    
