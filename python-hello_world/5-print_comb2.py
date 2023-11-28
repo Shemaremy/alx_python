@@ -1,6 +1,6 @@
-for a in range(0,100,1):
-    if a < 10:
-         print("0{}".format(a), end=", ")
-    elif a>=10:
-        print(a, end=", ")
+for a in range(100):
+    if a == 99:
+         print("{:02d}".format(a))
+    else:
+        print("{:02d}".format(a), end=", ")
     
