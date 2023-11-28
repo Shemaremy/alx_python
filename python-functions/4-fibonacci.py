@@ -19,10 +19,4 @@ def fibonacci_sequence(n):
              print(c,end="]")
             
  
-
-
-
-       
-          
-        
      
