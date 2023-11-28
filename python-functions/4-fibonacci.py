@@ -5,10 +5,10 @@ def fibonacci_sequence(n):
      
      for i in range(0,n):
          if i==0 or i==1:
-             print(i, end=", ")
+             print("[" , i , end=", ")
          else:
              c = a+b
-             print(c)
+             print(c , end=", ]")
              a = b
              b = c
  
