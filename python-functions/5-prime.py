@@ -1,12 +1,15 @@
 def is_prime(number):
-    m="True"
-    n="False"
+    
+    
     if number%2 != 0 and number%3 != 0:
         
-        R = print("{}".format(m))
+        m="True"
 
     else:
-        R = print("{}".format(n))  
+        m = "false"  
+
+
+    return m
 
 
      
