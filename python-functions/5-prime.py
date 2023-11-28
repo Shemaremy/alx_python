@@ -6,7 +6,4 @@ def is_prime(number):
         print("{}".format(m))
 
     else:
-        print("{}".format(n))
-
-
-       
+        print("{}".format(n))      
