@@ -1,1 +1,2 @@
-def 
+n=8
+print()
