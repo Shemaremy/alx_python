@@ -1,7 +1,9 @@
-for a in range(0,30,1):
-    if a < 10:
-         print("0{}".format(a), end=", ")
-    elif a>=10:
-        if 
-        print(a, end=", ")
-    
+def flacko(n):
+    return(str(n)[::-1])
+
+a = 1234
+
+flacko(a)
+
+print(f"a : {a}")
+print(f"b : {flacko}")
