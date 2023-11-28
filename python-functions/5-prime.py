@@ -1,15 +1,13 @@
 def is_prime(number):
-    
-    
-    if number%2 != 0 and number%3 != 0:
-        
-        m="True"
+   if number<2:
+      return False
 
-    else:
-        m = "False"  
+   for i in range (2, int(number**0.5)+1):
+       if number %i==0:    
+         return False   
 
-
-    return m
+         
+         return True
 
 
      
