@@ -3,10 +3,10 @@ def is_prime(number):
     n="False"
     if number%2 != 0 and number%3 != 0:
         
-        print("{}".format(m))
+        R = print("{}".format(m))
 
     else:
-        print("{}".format(n))  
+        R = print("{}".format(n))  
 
 
     return is_prime(number)    
