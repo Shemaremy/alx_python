@@ -4,7 +4,3 @@ def is_prime(number):
 
     else:
         print("False")
-
-
- 
-           
