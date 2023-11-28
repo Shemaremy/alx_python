@@ -6,5 +6,5 @@ def is_prime(number):
         print("False")
 
 
-n=int(input("enter any number : ")) 
-is_prime(n)           
+ 
+           
