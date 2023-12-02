@@ -1,6 +1,6 @@
-from add_0 import add
+import add_0 as flacko
 if __name__ == "__main__":
  a = 1
  b = 2
- c = add(a,b) 
- print(f"{a} + {b} = {c}")
+ 
+ print("1 + 2 = {}".format(flacko.add(a,b)))
