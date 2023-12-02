@@ -1,5 +1,5 @@
 import random
 def printf():
-  a = random.randint(-100, 100)
+  a = random(89,-100)
   print(a)
   return a
