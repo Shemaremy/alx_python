@@ -1,4 +1,5 @@
+import random
 def printf():
-  a = 98
+  a = random.randint(-100, 100)
   print(a)
   return a
