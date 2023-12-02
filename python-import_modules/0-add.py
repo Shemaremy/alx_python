@@ -1,5 +1,5 @@
-import add_0 as mymodule
+from add_0 import add
 if __name__ == "__main__":
  a = 1
  b = 2
- print("1 + 2 = {}".format(mymodule.add(a,b)))
+ print("1 + 2 = {}".format(add(a,b)))
