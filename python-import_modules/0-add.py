@@ -1,6 +1,6 @@
+from add_0 import add
 if __name__ == "__main__":
-
- c= __import__("add_0")
  a = 1
- b = 2 
- print("1 + 2 = {}".format(c.add(a,b)))
+ b = 2
+ c = add(a,b) 
+ print(f"{a} + {b} = {c}")
