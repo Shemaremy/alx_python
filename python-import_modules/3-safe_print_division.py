@@ -19,7 +19,7 @@ finally:
         print("{} / {} = None".format(a,b))
      else:
         print("Inside result: ",c)
-        print("{} / {} = {}".format(a,b,c))
+        
 
         
 
