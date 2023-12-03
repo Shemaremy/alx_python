@@ -18,7 +18,7 @@ finally:
      if b == 0:
         print("{} / {} = None".format(a,b))
      else:
-        print("Inside result: ",c)
+        print("Inside result:",c)
         
 
         
