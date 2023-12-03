@@ -7,8 +7,7 @@ def safe_print_division(a, b):
      return c
 
 try:
-    a = 12
-    b = 0
+    
     c = a/b
      
 except ZeroDivisionError:
