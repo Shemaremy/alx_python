@@ -2,7 +2,7 @@ def numberofargs (args):
     n = len(args)
 
     if n == 0:
-        x=print(len(args), "arguments.")
+        x=print(len(args), "ments.")
     elif n == 1:
         x=print(len(args),"argument:")
         x=print("{}: {}".format(n,args[0]))
