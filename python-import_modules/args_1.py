@@ -5,13 +5,13 @@ def numberofargs (args):
         x=print(len(args), "arguments.")
     elif n == 1:
         x=print(len(args),"argument:")
-        x=print(len(args),":",args[0])
+        x=print("{}: {}".format(n,args[0]))
     else:
         x=print(n,"arguments:")
         m=1
         a=0
-        for i in args:
-            x=print(m,":",args[a])
+        for i in args:            
+            x=print("{}: {}".format(m,args[a]))
             m=m+1
             a=a+1
             
