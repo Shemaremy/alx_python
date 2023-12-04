@@ -3,11 +3,9 @@ def numberofargs (args):
 
     if n == 0:
         x=print(len(args), "ments.")
-    elif n == 1:
-        x=print(len(args),"argument:")
-        x=print("{}: {}".format(n,args[0]))
+ 
     else:
-        x=print(n,"arguments:")
+        x=print(len(args),"arguments:")
         m=1
         a=0
         for i in args:            
