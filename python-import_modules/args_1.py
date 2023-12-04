@@ -1,17 +1,17 @@
 def numberofargs (args):
-    n = len(args)
+     
 
-    if n == 0:
+    if len(args) == 0:
         x=print(len(args), "arguments.")
-    elif n == 1:
+    elif len(args) == 1:
         x=print(len(args),"argument:")
-        x=print("{}: {}".format(n,args[0]))
+        x=print("{}: {}".format(len(args),args[0]))
     else:
-        x=print(n,"arguments:")
-        m=1
-        a=0
+        x=print(len(args),"arguments:")
+        
+        
         for i in args:            
-            x=print("{}: {}".format(m,args[a]))
+            x=print("{}: {}".format(i,args[i-1]))
             m=m+1
             a=a+1
             
