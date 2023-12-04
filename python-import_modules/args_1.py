@@ -2,10 +2,10 @@ def numberofargs (args):
     n = len(args)
 
     if n == 0:
-        x=print("0 arguments.")
+        x=print(len(args), "arguments.")
     elif n == 1:
-        x=print("1 argument:")
-        x=print("1:",args[0])
+        x=print(len(args),"argument:")
+        x=print(len(args),":",args[0])
     else:
         x=print(n,"arguments:")
         m=1
