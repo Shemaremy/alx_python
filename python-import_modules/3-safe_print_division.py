@@ -6,12 +6,12 @@ class Flacko(Exception):
 def safe_print_division(a, b):
      if b<0:
       x="Inside reslt: {}".format(a/b)
-      
+      p=a/b
      elif b>0:
       x="Inside lt: {}".format(a/b)
-     
+      p=a/b
     
-     return x 
+     return p 
 
 try:
     pass
