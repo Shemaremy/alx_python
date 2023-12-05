@@ -20,7 +20,8 @@ def square_matrix_simple(matrix=[]):
     elif len(matrix)==1 and c==1:
          grouped = [flattened_squares[i:i+1] for i in range (0,len(flattened_squares),2)]
 
-    
+    else:
+        [[]]
     
     return grouped if grouped is not None else [[]]
 
