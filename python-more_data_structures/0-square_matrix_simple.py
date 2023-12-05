@@ -21,9 +21,9 @@ def square_matrix_simple(matrix=[]):
          grouped = [flattened_squares[i:i+1] for i in range (0,len(flattened_squares),2)]
 
     else:
-       print("[[]]") 
-       print("[[]]")
-    
+        
+        
+       
     return grouped if grouped is not None else [[]]
 
 
