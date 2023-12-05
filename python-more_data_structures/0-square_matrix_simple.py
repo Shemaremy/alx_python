@@ -11,7 +11,7 @@ def square_matrix_simple(matrix=[]):
         grouped = [flattened_squares[i:i+2] for i in range (0,len(flattened_squares),2)]
     
     elif len(matrix)==3 and c==2:
-        grouped = [flattened_squares[i:i+3] for i in range (0,len(flattened_squares),3)]
+        grouped = [flattened_squares[i:i+2] for i in range (0,len(flattened_squares),2)]
     
     
     elif len(matrix)==4 and c==1:
