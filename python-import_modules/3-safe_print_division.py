@@ -2,7 +2,10 @@ class Flacko(Exception):
  """Custom exception for negative values."""
 
 def safe_print_division(a, b):
-     #c=a/b
+     if b<0:
+      x=a/(-b)
+     else:
+      x=a/b 
     
      return a/b
 
@@ -22,7 +25,7 @@ finally:
         print("Inside result: {}".format(a,b))
         
      else:
-        print("Inside result: {}".format(safe_print_division(a,b)))
+        print("Inside result: {}".format(safe_print_division(10,2)))
         
 
         
