@@ -5,10 +5,10 @@ class Flacko(Exception):
 
 def safe_print_division(a, b):
      if b<0:
-      x="Inside result: {}".format(a/b)
+      x="Inside reslt: {}".format(a/b)
       
      elif b>0:
-      x="Inside result: {}".format(a/b)
+      x="Inside lt: {}".format(a/b)
      
     
      return x 
