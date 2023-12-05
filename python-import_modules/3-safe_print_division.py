@@ -11,7 +11,7 @@ def safe_print_division(a, b):
 
 try:
     a=10
-    b=2
+    b=-2
     pass
 
 except ZeroDivisionError:
@@ -22,10 +22,10 @@ finally:
         print("{} / {} = None".format(a,b))
       
      elif b < 0:
-        print("Inside result: {}".format(a,b))
+        print("Inside result: {}".format(safe_print_division(a,b)))
         
      else:
-        print("Inside result: {}".format(safe_print_division(10,2)))
+        print("Inside result: {}".format(safe_print_division(a,b)))
         
 
         
