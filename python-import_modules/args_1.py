@@ -8,10 +8,10 @@ def numberofargs (args):
         x=print("{}: {}".format(len(args),args[0]))
     else:
         x=print(len(args),"arguments:")
-        
-        
+        m=1
+        a=0
         for i in args:            
-            x=print("{}: {}".format(i,args[i-1]))
+            x=print("{}: {}".format(m,args[a]))
             m=m+1
             a=a+1
             
