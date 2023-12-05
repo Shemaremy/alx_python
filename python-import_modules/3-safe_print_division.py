@@ -11,7 +11,10 @@ def safe_print_division(a, b):
 
 try:
     a=10
-    b=-2
+    b=2
+
+    d=10
+    e=-2
     #print(a if a>b else b)
 
 except ZeroDivisionError:
@@ -21,10 +24,10 @@ finally:
      if b == 0:
         print("{} / {} = None".format(a,b))
       
-     elif b < 0:
+     elif b < 0 and e < 0:
         print("Inside result: {}".format(safe_print_division(a,b)))
         
-     elif b>0:
+     elif b > 0 and e>0:
         print("Inside result: {}".format(safe_print_division(a,b)))
         
 
