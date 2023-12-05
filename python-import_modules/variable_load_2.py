@@ -1,4 +1,4 @@
 def Simple_variable():
-  
-  x=print(a)
-  return x
+  a = 89
+
+  return a

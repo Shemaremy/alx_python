@@ -1,5 +1,5 @@
 def numberofargs ():
-    args=[] 
+    args=["Hello"] 
     
     if len(args) == 0:
         x=(len(args), "arguments.")
