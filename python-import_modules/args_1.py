@@ -1,6 +1,6 @@
-def numberofargs (args):
-     
-
+def numberofargs ():
+    args=[] 
+    
     if len(args) == 0:
         x=(len(args), "arguments.")
     elif len(args) == 1:
