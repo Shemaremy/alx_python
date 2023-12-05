@@ -7,6 +7,4 @@ def no_c(my_string):
 word = "School"
 new_word = no_c(word)
 
-print(new_word)
-print(word)
-
+ 
