@@ -15,10 +15,12 @@ def safe_print_division(a, b):
       x="Inside lt: {}".format(a/b)
       c=a/b
     
-     return a/b 
+     return c 
 
 try:
-    pass
+    a = 10
+    b = 2
+    print("Inside result: {}".format(safe_print_division(a,b)))
 
     
     
@@ -28,9 +30,7 @@ except ZeroDivisionError:
     print("Inside result None")
 
 finally:
- a = 10
- b = 2
- print("Inside result: {}".format(safe_print_division(a,b)))
+   pass   
 
  #a = 10
  #b = 2
