@@ -1,4 +1,5 @@
- 
+a = 10
+b = 2
 
 class Flacko(Exception):
  """Custom exception for negative values."""
