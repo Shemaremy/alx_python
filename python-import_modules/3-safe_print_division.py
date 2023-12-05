@@ -22,10 +22,10 @@ finally:
         print("{} / {} = None".format(a,b))
       
      elif b < 0:
-        print("Inside result: {}".format(safe_print_division(a,b)))
+        print("Inside result: {}".format(safe_print_division(10,-2)))
         
      else:
-        print("Inside result: {}".format(safe_print_division(a,b)))
+        print("Inside result: {}".format(safe_print_division(10,2)))
         
 
         
