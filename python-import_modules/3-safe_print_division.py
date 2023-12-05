@@ -30,21 +30,10 @@ except ZeroDivisionError:
 finally:
  a = 10
  b = 2
-result = safe_print_division(a, b)
-print("{:d} / {:d} = {}".format(a, b, result))
+ print("Inside result: {}".format(safe_print_division(a,b)))
 
-
-
-
-
-
-   
-
-
-
-     
-        
-
-        
-
+ #a = 10
+ #b = 2
+#result = safe_print_division(a, b)
+#print("{:d} / {:d} = {}".format(a, b, result))
 
