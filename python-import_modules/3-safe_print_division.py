@@ -11,8 +11,6 @@ try:
     b = 2
     c = a/b
 
-
-     
 except ZeroDivisionError:
     print("Inside result None")
 
@@ -20,8 +18,7 @@ finally:
      if b == 0:
         print("{} / {} = None".format(a,b))
 
-     elif e < 0:
-        print("Inside result:",f)   
+        
      else:
         print("Inside result:",c)
         
