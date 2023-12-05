@@ -5,9 +5,9 @@ class Flacko(Exception):
 
 def safe_print_division(a, b):
      if b<0:
-      x=a/b
+      x=print("Inside result: {}".format(a/b))
      elif b>0:
-      x=a/b
+      x=print("Inside result: {}".format(a/b))
      
     
      return x
