@@ -1,5 +1,4 @@
 import random
-def printf():
-  a = 89
-  x=print("{}".format(a))
+def myfunc(a):
+  x=print(a)
   return x
