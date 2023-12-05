@@ -22,6 +22,7 @@ def square_matrix_simple(matrix=[]):
 
     else:
        print("[[]]") 
+       print("[[]]")
     
     return grouped if grouped is not None else [[]]
 
