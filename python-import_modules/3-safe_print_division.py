@@ -25,7 +25,7 @@ except ZeroDivisionError:
 finally:
    u = safe_print_division(10,2)
    if u is not None:
-    print("{}".format(u))
+    print(u)
 
 
 
