@@ -22,7 +22,7 @@ finally:
         print("Inside result: {}".format(a,b))
         
      else:
-        print("Inside result:", c)
+        print("Inside result:", a/b)
         
 
         
