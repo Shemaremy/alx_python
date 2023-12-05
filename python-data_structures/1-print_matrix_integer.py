@@ -1,11 +1,27 @@
 def print_matrix_integer(matrix=[[]]):
-    for row in matrix:
-        print("{:d} {:d} {:d}".format(*row))
+  c=len(matrix[0]) if matrix else 0
+    
+  for row in matrix:
+        if len(matrix)==1 and c==1:
+           print("{:d}".format(*row))
+
+        elif len(matrix)==2 and c==2:
+           print("{:d} {:d}".format(*row))
+
+        elif len(matrix)==3 and c==2:
+           print("{:d} {:d}".format(*row))   
         
+        elif len(matrix)==3 and c==3:
+           print("{:d} {:d} {:d}".format(*row))
+
+        elif len(matrix)==3 and c==1:
+           print("{:d}".format(*row))   
+        
+        else:
+            print("[[]]")
 
  
-
- 
-#matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+#matrix = [[1]]
 
 #print_matrix_integer(matrix)
+
