@@ -17,7 +17,9 @@ def square_matrix_simple(matrix=[]):
     elif len(matrix)==4 and c==1:
          grouped = [[element] for element in flattened_squares]
     
-    
+    elif len(matrix)==1 and c==1:
+         grouped = [flattened_squares[i:i+1] for i in range (0,len(flattened_squares),2)]
+
     
     
     return grouped if grouped is not None else [[]]
