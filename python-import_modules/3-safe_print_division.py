@@ -19,7 +19,7 @@ finally:
         print("{} / {} = None".format(a,b))
       
      elif b < 0:
-        print("Inside result:", c)
+        print("Inside result:", -c)
         
      else:
         print("Inside result:", c)
