@@ -18,7 +18,7 @@ def print_matrix_integer(matrix=[[]]):
            print("{:d}".format(*row))   
         
         else:
-            print(None)
+            break 
 
  
 #matrix = [[1]]
