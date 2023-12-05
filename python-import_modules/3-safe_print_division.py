@@ -20,7 +20,7 @@ finally:
 
         
      else:
-        print("Inside result:",c)
+        print("Inside result:", a/2)
         
 
         
