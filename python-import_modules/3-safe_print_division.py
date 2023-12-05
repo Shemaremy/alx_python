@@ -11,9 +11,7 @@ try:
     b = 2
     c = a/b
 
-    d=10
-    e=-2
-    f=d/e
+
      
 except ZeroDivisionError:
     print("Inside result None")
