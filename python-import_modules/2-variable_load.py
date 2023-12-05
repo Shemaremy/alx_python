@@ -1,4 +1,5 @@
-from variable_load_2 import myfunc
+import variable_load_2
 if __name__ == "__main__":
-    if myfunc(89) is not None:
-       print(myfunc(89))
+    a = variable_load_2.myfunc(89)    
+    if a is not None:
+      print(a)
