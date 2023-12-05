@@ -3,7 +3,7 @@ class Flacko(Exception):
 
 def safe_print_division(a, b):
      if b<0:
-      x=a/(-b)
+      x=a/b
      else:
       x=a/b 
     
@@ -11,7 +11,7 @@ def safe_print_division(a, b):
 
 try:
     a=10
-    b=2
+    b=-2
     #print(a if a>b else b)
 
 except ZeroDivisionError:
@@ -22,10 +22,10 @@ finally:
         print("{} / {} = None".format(a,b))
       
      elif b < 0:
-        print("Inside result: {}".format(safe_print_division(10,-2)))
+        print("Inside result: {}".format(safe_print_division(a,b)))
         
-     else:
-        print("Inside result: {}".format(safe_print_division(10,2)))
+     elif b>0:
+        print("Inside result: {}".format(safe_print_division(a,b)))
         
 
         
