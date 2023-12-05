@@ -7,12 +7,12 @@ def safe_print_division(a, b):
      else:
       x=a/b 
     
-     return a/b
+     return x
 
 try:
     a=10
     b=2
-    pass
+    #print(a if a>b else b)
 
 except ZeroDivisionError:
     print("Inside result None")
