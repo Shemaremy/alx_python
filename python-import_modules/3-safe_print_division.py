@@ -11,7 +11,7 @@ def safe_print_division(a, b):
 
 try:
     a=10
-    b=-2
+    b=2
     pass
 
 except ZeroDivisionError:
