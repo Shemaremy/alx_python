@@ -9,7 +9,7 @@ def safe_print_division(a, b):
 try:
     a = 10
     b = 2
-    c = a/b
+    
 
 except ZeroDivisionError:
     print("Inside result None")
