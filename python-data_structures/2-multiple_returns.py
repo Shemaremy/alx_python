@@ -6,6 +6,6 @@ def multiple_returns(sentence):
         return m
 
 
-sentence = ""
-length, first, *rest = multiple_returns(sentence)
-print("Length: {} - First character: {}".format(length, first))
+#sentence = ""
+#length, first, *rest = multiple_returns(sentence)
+#print("Length: {} - First character: {}".format(length, first))
