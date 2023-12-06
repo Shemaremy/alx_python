@@ -22,9 +22,9 @@ def square_matrix_simple(matrix=[]):
 
     else:
         
-        
+        grouped = [[]]
        
-    return grouped if grouped is not None else [[]]
+    return grouped  
 
 
 
