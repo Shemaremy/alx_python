@@ -1,21 +1,15 @@
-def numberofargs ():
-    args=["Hello"] 
+def print_arguments(args_list):
+    c = len(args_list) 
     
-    if len(args) == 0:
-        x=(len(args), "arguments.")
-    elif len(args) == 1:
-        x=(len(args),"argument:")
-        x=("{}: {}".format(len(args),args[0]))
+    if c == 0:
+        print(len(args), "arguments.")
+
     else:
-        x=(len(args),"arguments:")
-        m=1
-        a=0
-        for i in args:            
-            x=("{}: {}".format(m,args[a]))
-            m=m+1
-            a=a+1
-            
-    return x
+        print(f"{c} argument{'' if c == 1 else 's'}:")
+
+        for i, arg in enumerate(args_list, start=1):
+            print(f"{i}: {repr(arg)}") 
+
 
 
             

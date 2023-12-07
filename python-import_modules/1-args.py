@@ -1,9 +1,8 @@
-from args_1 import numberofargs
-    
 if __name__ == "__main__":
+ import args_1
+ m = ["Hello"]
 
- 
- print(numberofargs())  
+ args_1.print_arguments(m)  
     
 
 
