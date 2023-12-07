@@ -4,7 +4,7 @@ def safe_print_division(a, b):
       
    except ZeroDivisionError:
     print("Inside result: None")
-    print("{} / {} = None".format(a,b))
+    print("{} / {} = {}".format(a,b,None))
     return None
 
    except Exception as e:
@@ -18,7 +18,7 @@ def safe_print_division(a, b):
     print("Inside result: {}".format(a/b))
 
 
- 
+
 
 
 #a = 42
