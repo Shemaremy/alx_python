@@ -4,7 +4,7 @@ def safe_print_division(a, b):
       
    except ZeroDivisionError:
     print("Inside result: None")
-    print("{} / {} = {}".format(a,b,None))
+    #print("{:d} / {:d} = None".format(a,b))
     return None
 
    except Exception as e:
@@ -15,17 +15,13 @@ def safe_print_division(a, b):
       return result 
 
    finally:
-    print("Inside result: {}".format(a/b))
+    if 'result' not in locals():
+     return("None")
+    else:
+       print("Inside result: {}".format(a/b))
 
 
-
-
-
-#a = 42
-#b = 2
-#safe_print_division(a,b)
-
-   
-
- 
-
+#a = 0
+#b = 10
+#result = safe_print_division(a, b)
+#print("{:d} / {:d} = {}".format(a, b, result))
