@@ -1,30 +1,24 @@
-a = 10
-b = 2
-
 def safe_print_division(a, b):
-     if b<0:
-      x="Inside reslt: {}".format(a/b)
-      c=a/b
-     elif b>0:
-       
-      x="Inside lt: {}".format(a/b)
-      c=a/b
-      return c 
-try:
-    a = 10
-    b = 2
+   try:
+      c = a/b   
+      
+   except ZeroDivisionError:
+    print("Inside result: None")
+    print("{} / {} = None".format(a,b))
 
-except ZeroDivisionError:
-    print("Inside result None")
+   except Exception as e:
+     print("Error: {}".format(e))
 
-finally:
+   finally:
+    print("Inside result: {}".format(c))
 
- a = 10
- b = -2
- result = safe_print_division(a, b)
- print("{:d} / {:d} = {}".format(a, b, result))
 
-   print("Inside result: {}".format(safe_print_division(a,b)))
+
+#a = 42
+#b = 2
+#safe_print_division(a,b)
+
+   
 
  
 
