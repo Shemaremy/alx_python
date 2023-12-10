@@ -6,5 +6,5 @@ class Remi:
 
 #mi = Remi()
 #r= is_same_class(mi,Remi)
- 
- 
+a = 1
+is_same_class(a, int)
