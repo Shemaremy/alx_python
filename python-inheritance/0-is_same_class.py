@@ -6,4 +6,4 @@ class Remi:
 
 mi = Remi()
 r= is_same_class(mi,Remi)
-#print(r)
+print(r)
