@@ -1,4 +1,6 @@
+""" Here  is everything """
 def is_same_class(obj, a_class):
+""" Here  is everything """
 
   class Remi:
      pass
