@@ -7,6 +7,6 @@ def is_same_class(obj, a_class):
   return isinstance(obj, a_class)
 
 a = 1
-#print(is_same_class(a, int))
+print(is_same_class(a, int))
 
  
