@@ -11,6 +11,11 @@ class BaseGeometry:
     '''  
     
 class BaseGeometry:
+    '''
+    The below program will be
+    telling more about inhertitance
+    in python programming
+    '''     
     def area(self):
         raise NotImplementedError("area() is not implemented.")
 
@@ -23,6 +28,11 @@ class BaseGeometry:
         return value
 
 class Rectangle(BaseGeometry):
+    '''
+    The below program will be
+    telling more about inhertitance
+    in python programming
+    ''' 
     def __init__(self, width, height):
         self.__width = self.integer_validator("width", width)
         self.__height = self.integer_validator("height", height)
