@@ -1,3 +1,8 @@
+'''
+The below program will be
+telling more about inhertitance
+in python programming
+'''
 class BaseClass:
     pass
 class DerivedClass(BaseClass):
