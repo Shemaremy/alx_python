@@ -1,4 +1,13 @@
+'''
+The below program will be
+telling us the size of our square
+'''
 class Square:
+    '''
+    Here comes a class definition
+    which contais objects
+    such as the methods you're seeing below
+    '''    
     def init(self, size=0):
         self.size = size  # Using the property setter to validate and set the size
 
