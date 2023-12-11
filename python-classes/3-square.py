@@ -1,3 +1,4 @@
+#here comes a documented class too
 '''
 The below program will be
 telling us the size of our square
@@ -6,6 +7,7 @@ hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhgggggggggggg
 hhhhhhhhhhhhhhhhhhhhgggiiiiiiiiiiiiii
 '''
 class Square:
+    #here comes a documented class too
     '''
     Here comes in a class definition
     which contais objects
