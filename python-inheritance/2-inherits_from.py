@@ -18,6 +18,6 @@ def inherits_from(obj, a_class):
     return isinstance(obj, type) and issubclass(type(obj), a_class)
 
 
-a = True
-result = inherits_from(a,  BaseClass)
-print(result)
+#a = True
+#result = inherits_from(a,  BaseClass)
+#print(result)
