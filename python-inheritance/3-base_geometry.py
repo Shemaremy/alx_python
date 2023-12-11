@@ -9,4 +9,4 @@ class BaseGeometry:
     telling more about inhertitance
     in python programming
     '''
-    pass
+    
