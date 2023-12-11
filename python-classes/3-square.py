@@ -5,7 +5,7 @@ telling us the size of our square
 '''
 class Square:
     '''
-    Here comes a class definition
+    Here comes in a class definition
     which contais objects
     such as the methods you're seeing below
     '''    
