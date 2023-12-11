@@ -36,5 +36,5 @@ class Square:
 
  
 square_instance = Square(3)
-print(square_instance.area())  # Output: 9
-square_instance.my_print()
+#print(square_instance.area())  # Output: 9
+#square_instance.my_print()
