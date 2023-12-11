@@ -6,6 +6,11 @@ uhfefeidjeidjeiiecdciciede
 #class definition
 
 class Square:
+    '''
+    dcdjdffefefefrfrfrfferfferf
+    rferfergtrgfrfergerefcr
+    uhfefeidjeidjeiiecdciciede
+    '''
     def __init__(self, _Square__size):
      #constructor definition by using init
     
