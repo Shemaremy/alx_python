@@ -16,7 +16,7 @@ class Square:
 
         # Validate if size is greater than or equal to zero
         if size < 0:
-            raise ValueError
+            raise ValueError("size must be >= 0")
 
         # If validations pass, set the size as a private instance attribute
         self.__size = size
