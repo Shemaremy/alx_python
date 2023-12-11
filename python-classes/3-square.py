@@ -1,10 +1,7 @@
-#here comes a documented class too
+
 '''
 The below program will be
 telling us the size of our square
-vhbhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhgggggggggggg
-hhhhhhhhhhhhhhhhhhhhgggiiiiiiiiiiiiii
 '''
 class Square:
     #here comes a documented class too
@@ -13,12 +10,12 @@ class Square:
     which contais objects
     such as the methods you're seeing below
     '''    
-    def init(self, size=0):
+    def __init__(self, size=0):
         self.size = size  # Using the property setter to validate and set the size
 
     @property
     def size(self):
-        return self.size
+        return self.__size
 
     @size.setter
     def size(self, value):
@@ -31,7 +28,7 @@ class Square:
             raise ValueError("size must be greater or equal to zero.")
 
         # If validations pass, set the size as a private instance attribute
-        self.size = value
+        self.__size = value
 
     def area(self):
         # Return the area of the square
