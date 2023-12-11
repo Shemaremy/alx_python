@@ -36,7 +36,7 @@ class Rectangle(BaseGeometry):
 
 try:
     rectangle = Rectangle(5, 10)
-    print("Area:", rectangle.area())
-    print(str(rectangle))
+    #print("Area:", rectangle.area())
+    #print(str(rectangle))
 except Exception as e:
     print(f"Error: {e}")
