@@ -12,12 +12,11 @@ def is_same_class(obj, a_class):
     class Remi:
      pass
 
-    return isinstance(obj, a_class)
+    return type(obj) == a_class and not (type(obj) == int and a_class == bool)
+  
+#a = 1
 
-a = 1
-if is_same_class(a, int):
-    pass
-    #print(is_same_class(a, int))
+#print(is_same_class(a, int))
     
 
  
