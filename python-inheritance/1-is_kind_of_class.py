@@ -1,4 +1,14 @@
+'''
+The below program will be
+telling more about inhertitance
+in python programming
+'''
 def is_kind_of_class(obj, a_class):
+    '''
+    The below program will be
+    telling more about inhertitance
+    in python programming
+    '''    
     return isinstance(obj, a_class) or issubclass(type(obj), a_class)
 
 # Example usage:
