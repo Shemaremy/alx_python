@@ -12,7 +12,7 @@ class Square:
     def __init__(self, size=0):
         # Validate if size is an integer
         if not isinstance(size, int):
-            raise TypeError
+            raise TypeError("size must be an integer")
 
         # Validate if size is greater than or equal to zero
         if size < 0:
