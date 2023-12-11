@@ -1,7 +1,9 @@
 '''
 The below program will be
 telling us the size of our square
-
+vhbhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhgggggggggggg
+hhhhhhhhhhhhhhhhhhhhgggiiiiiiiiiiiiii
 '''
 class Square:
     '''
