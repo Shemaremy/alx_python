@@ -1,16 +1,22 @@
+'''
+dcdjdffefefefrfrfrfferfferf
+rferfergtrgfrfergerefcr
+uhfefeidjeidjeiiecdciciede
+'''
 #class definition
 
 class Square:
-    
     def __init__(self, _Square__size):
-        #constructor definition by using init
+     #constructor definition by using init
     
         self._Square__size = _Square__size
-        #Initialisation 
-
+   
+#Initialisation 
     def get_size(self):
-    
-        #A method to return the sixe of our square
+
+
+#A method to return the sixe of our square
+
         return self._Square__size
 
 #Instantiation
