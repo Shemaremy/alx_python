@@ -1,9 +1,9 @@
 class Square:
-    def __init__(self, size):
-        self.size = size
+    def __init__(self, _Square__size):
+        self._Square__size = _Square__size
 
     def get_size(self):
-        return self.size
+        return self._Square__size
 
 #Instantiation
 #my_square = Square(5)
