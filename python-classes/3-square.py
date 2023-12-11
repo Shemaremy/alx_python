@@ -41,18 +41,20 @@ try:
     square_instance.size = 5
 
     # Access the size using the property getter
-    print("Size of the square:", square_instance.size)
+    #print("Size of the square:", square_instance.size)
 
     # Calculate and print the area
-    print("Area of the square:", square_instance.area())
+    #print("Area of the square:", square_instance.area())
 
     # Attempt to set size to a non-integer value
     square_instance.size = "invalid"
 except TypeError as e:
-    print(f"Error: {e}")
+    #print(f"Error: {e}")
+    pass
 
 try:
     # Attempt to set size to a negative value
     square_instance.size = -3
 except ValueError as e:
-    print(f"Error: {e}")
+    #print(f"Error: {e}")
+    pass
