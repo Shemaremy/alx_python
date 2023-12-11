@@ -1,4 +1,7 @@
-
+'''
+The below program will be
+telling us the size of our square
+'''
 def is_same_class(obj, a_class):
 
   class Remi:
