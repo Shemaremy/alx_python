@@ -1,3 +1,8 @@
+class BaseClass:
+    pass
+class DerivedClass(BaseClass):
+    pass
+
 '''
 The below program will be
 telling more about inhertitance
@@ -9,14 +14,10 @@ def inherits_from(obj, a_class):
     telling more about inhertitance
     in python programming
     '''     
-    return isinstance(obj, type) and issubclass(obj, a_class)
+    
+    return isinstance(obj, type) and issubclass(type(obj), a_class)
 
-class ParentClass:
-    pass
 
-class ChildClass(ParentClass):
-    pass
-
-obj = ChildClass()
-result = inherits_from(obj, ParentClass)
-#print(result)
+a = True
+result = inherits_from(a,  BaseClass)
+print(result)
