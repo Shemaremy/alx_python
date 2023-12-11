@@ -1,15 +1,14 @@
 '''
-dcdjdffefefefrfrfrfferfferf
-rferfergtrgfrfergerefcr
-uhfefeidjeidjeiiecdciciede
+The below program will be
+telling us the size of our square
 '''
 #class definition
 
 class Square:
     '''
-    dcdjdffefefefrfrfrfferfferf
-    rferfergtrgfrfergerefcr
-    uhfefeidjeidjeiiecdciciede
+    Here comes a class definition
+    which contais objects
+    such as the methods you're seeing below
     '''
     def __init__(self, _Square__size):
      #constructor definition by using init

@@ -1,4 +1,14 @@
+'''
+The below program will be
+telling us the size of our square
+'''
 class Square:
+    '''
+    Here comes a class definition
+    which contais objects
+    such as the methods you're seeing below
+    '''
+
     def __init__(self, size=0):
         # Validate if size is an integer
         if not isinstance(size, int):
