@@ -24,8 +24,7 @@ def inherits_from(obj, a_class):
 
 
 
-a = True
-#print(inherits_from(a, int))
+
 
 
 #a = True
