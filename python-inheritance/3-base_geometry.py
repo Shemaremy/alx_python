@@ -5,7 +5,10 @@ in python programming
 '''
 class BaseGeometry:
    class meta_class:
-     def __dir__(self):
+    pass
+    #def __init_subclass__(cls,**kwargs):
+     #   pass
+    def __dir__(self):
         return [attr for attr in dir(type(self)) if not (attr.startswith("__") and attr.endswith("__")) or attr == "__dir__"]
 
 
