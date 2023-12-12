@@ -30,8 +30,8 @@ def inherits_from(obj, a_class):
     #return issubclass(type(obj), a_class) if obj > 1 else False
 
 
-a = [1, 2, 3]
-print(inherits_from(a, list))
+#a = [1, 2, 3]
+#print(inherits_from(a, list))
 #a = None
 #print(inherits_from([1,2,3], object))
 
