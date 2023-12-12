@@ -26,8 +26,8 @@ def inherits_from(obj, a_class):
 
 
 
-a = None
-print(inherits_from(a, object))
+#a = None
+#print(inherits_from(a, object))
 
 
 #a = True
