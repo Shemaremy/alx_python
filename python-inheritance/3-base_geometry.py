@@ -9,3 +9,5 @@ class BaseGeometry:
     telling more about inhertitance
     in python programming
     '''  
+def dir(cls):
+        return [attribute for  attribute in super().dir() if attribute != "init_subclass"] 
