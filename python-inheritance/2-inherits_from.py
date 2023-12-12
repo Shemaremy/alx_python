@@ -20,12 +20,12 @@ def inherits_from(obj, a_class):
     in python programming
     '''     
     
-    return issubclass(type(obj), a_class)
+    return issubclass(type(obj), a_class) if obj > 1 else False
 
 
 
-#a = True
-#print(inherits_from(a, int))
+a = 1
+print(inherits_from(a, int))
 
 
 #a = True
