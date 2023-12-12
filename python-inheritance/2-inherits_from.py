@@ -20,11 +20,12 @@ def inherits_from(obj, a_class):
     in python programming
     '''     
     
-    return isinstance(obj, type) and (issubclass(type(obj), a_class) if obj else None)
+    return issubclass(type(obj), a_class)
 
 
 
-
+#a = True
+#print(inherits_from(a, int))
 
 
 #a = True
