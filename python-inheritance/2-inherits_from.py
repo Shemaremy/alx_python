@@ -32,7 +32,7 @@ def inherits_from(obj, a_class):
 
 
 #a = None
-print(inherits_from([1,2,3], object))
+#print(inherits_from([1,2,3], object))
 
 
 #a = True
