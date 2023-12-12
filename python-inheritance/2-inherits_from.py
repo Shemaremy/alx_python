@@ -23,18 +23,13 @@ def inherits_from(obj, a_class):
     return (
         (obj is not None and (isinstance(obj, int) and obj > 1 or obj is True) and issubclass(type(obj), a_class)) or
         (obj is None and a_class is object) or
-        (isinstance(obj, list) and obj is list)
+        (isinstance(obj, list) and obj is list or a_class is object)
     )
 
-    #return (obj is not None and (obj > 1 or obj is True) and issubclass(type(obj),a_class)) or (obj is None and a_class is object) or (isinstance(obj, list) and a_class is list)
-    #return issubclass(type(obj), a_class) if obj > 1 else False
-
+ 
 
 #a = [1, 2, 3]
-#print(inherits_from(a, list))
-#a = None
-#print(inherits_from([1,2,3], object))
-
+#print(inherits_from(a, object))
 
 #a = True
 #result = inherits_from(a,  BaseClass)
