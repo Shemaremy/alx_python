@@ -21,13 +21,13 @@ def inherits_from(obj, a_class):
     '''     
     
 
-    return obj is not None and (obj > 1 or obj is True) and issubclass(type(obj),a_class)
+    return (obj is not None and (obj > 1 or obj is True) and issubclass(type(obj),a_class)) or (obj is None and a_class is object)
     #return issubclass(type(obj), a_class) if obj > 1 else False
 
 
 
-#a = None
-#print(inherits_from(a, object))
+a = None
+print(inherits_from(a, object))
 
 
 #a = True
