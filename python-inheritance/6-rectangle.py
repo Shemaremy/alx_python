@@ -34,6 +34,8 @@ class Rectangle(BaseGeometry):
             elif name == "width":
                 raise ValueError("width must be greater than 0")
 
+#print(issubclass(Rectangle, BaseGeometry))
+
 #try:
 #    r = Rectangle(3, "3")
 #except TypeError as e:
