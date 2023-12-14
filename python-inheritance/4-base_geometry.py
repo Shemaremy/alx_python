@@ -1,13 +1,18 @@
 '''
 The below program will be
-telling more about inhertitance
-in python programming
+printing the list of all attributes
+
 '''
 class BaseGeometry:
     '''
-    The below program will be
-    telling more about inhertitance
-    in python programming
-    '''  
+    This is the Class docstring
+    (Tring to figure out something. lol)
+    '''
+    pass
+
     def area(self):
-        raise NotImplementedError("area() is not implemented")
+        raise Exception("area() is not implemented")
+
+#bg = BaseGeometry()
+
+#print(dir(bg))
