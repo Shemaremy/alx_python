@@ -1,20 +1,20 @@
 '''
 The below program will be
-telling more about inhertitance
-in python programming
+printing the list of all attributes
+
 '''
 class BaseGeometry:
-   class meta_class:
-    
+    '''
+    This is the Class docstring
+    (Tring to figure out something. lol)
+    '''
+    pass
 
-    def __dir__(self):
-        return [attr for attr in dir(type(self)) if not (attr.startswith("__") and attr.endswith("__")) or attr == "__dir__"]
 
 
+#bg = BaseGeometry()
 
-bg = BaseGeometry()
-
-print(dir(bg))
+#print(dir(bg))
 
 
 
