@@ -32,7 +32,7 @@ class Rectangle(BaseGeometry):
             if name == "height":
                 raise TypeError("height must be an integer")
             elif name == "width":
-                raise TypeError("width must be greater than 0")
+                raise ValueError("width must be greater than 0")
 
 #try:
 #    r = Rectangle(3, "3")
