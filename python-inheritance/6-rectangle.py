@@ -11,6 +11,7 @@ telling more about inhertitance
 in python programming
 '''
 class Rectangle(BaseGeometry):
+    
  '''
  The below program will be
  telling more about inhertitance
@@ -27,9 +28,14 @@ class Rectangle(BaseGeometry):
     self.__height = height
 
  def integer_validator(self, name, value):
-    if not isinstance (value, int):
-        raise TypeError(f"{name} must be an integer")
+    if not isinstance (value, int) or value <= 0:
+        raise ValueError("width must be greater than 0")
 
 
+
+try:
+    r = Rectangle(0, 4)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
 
 #print(issubclass(Rectangle, BaseGeometry))
