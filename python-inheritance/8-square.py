@@ -35,8 +35,8 @@ class Square(Rectangle):
 
 
 # Example usage:
-try:
-    square = Square(5)
-    print(f"Square area: {square.area()}")
-except ValueError as e:
-    print(f"Error: {e}")
+#try:
+#    square = Square(5)
+#    print(f"Square area: {square.area()}")
+#except ValueError as e:
+#    print(f"Error: {e}")
