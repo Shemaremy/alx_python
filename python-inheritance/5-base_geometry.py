@@ -19,9 +19,9 @@ class BaseGeometry:
             raise ValueError(f"{name} must be greater than 0")
 
 
-bg = BaseGeometry()
+#bg = BaseGeometry()
 
-try:
-    bg.area()
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+#try:
+  #  bg.area()
+#except Exception as e:
+ #   print("[{}] {}".format(e.__class__.__name__, e))
