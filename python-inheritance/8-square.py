@@ -31,9 +31,9 @@ class Square(Rectangle):
     @staticmethod
     def __integer_validator(value):
         if not isinstance(value, int) or value <= 0:
-            raise ValueError("Size must be a positive integer")
+            raise TypeError("size must be an integer")
 
-
+print(issubclass(Square, Rectangle))
 # Example usage:
 #try:
 #    square = Square(5)
