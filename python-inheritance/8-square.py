@@ -33,7 +33,7 @@ class Square(Rectangle):
         if not isinstance(value, int) or value <= 0:
             raise TypeError("size must be an integer")
 
-print(issubclass(Square, Rectangle))
+#print(issubclass(Square, Rectangle))
 # Example usage:
 #try:
 #    square = Square(5)
