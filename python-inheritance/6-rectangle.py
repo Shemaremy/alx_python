@@ -32,5 +32,4 @@ class Rectangle(BaseGeometry):
 
 
 
-
 #print(issubclass(Rectangle, BaseGeometry))
