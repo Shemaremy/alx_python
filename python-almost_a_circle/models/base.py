@@ -32,8 +32,8 @@ class Base:
             self.id = Base.__nb_objects
 
 # Example usage:
-obj1 = Base()
-print(obj1.id) # Output: 1
+#obj1 = Base()
+#print(obj1.id) # Output: 1
 
-obj2 = Base(100)
-print(obj2.id) # Output: 100
+#obj2 = Base(100)
+#print(obj2.id) # Output: 100
