@@ -1,3 +1,8 @@
+"""
+Creating a base class and 
+everything will be included inside here
+"""
+
 class Base:
     """
     A class representing a Base object.
