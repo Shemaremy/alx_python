@@ -1,7 +1,12 @@
 # rectangle.py
-
+'''
+Importing from Base class
+'''
 from base import Base
-
+'''
+Creating another class 
+called rectangle
+'''
 class Rectangle(Base):
     """
     A class representing a Rectangle object, inheriting from the Base class.
