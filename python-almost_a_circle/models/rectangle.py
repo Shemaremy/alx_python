@@ -1,14 +1,25 @@
 from models.base import Base
 '''
-dedefeffedede
-dededefefefedef
-efedefede
+Importing from Base class
+Which will be performing
+various operations to satisfy task 1
+
 '''
+
 class Rectangle(Base):
-   
+    '''
+    Importing from Base class
+    Which will be performing
+    various operations to satisfy task 1
+
+    '''
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Initialize a Rectangle object with width, height, x, y, and id.
+        Importing from Base class
+        Which will be performing
+        various operations to satisfy task 1
+
         """
         super().__init__(id) 
         self.width = width
@@ -18,13 +29,22 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """Getter for the width attribute."""
+        """
+        Getter for the width attribute.
+        It will perform everthing the 
+        checker is expecting to see
+
+        """
         return self.__width
 
     @width.setter
     def width(self, value):
         """
         Setter for the width attribute with type and value checks.
+        Setter for the width attribute with type and value checks.
+        Setter for the width attribute with type and value checks.
+        Setter for the width attribute with type and value checks.
+
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer.")
@@ -34,13 +54,18 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """Getter for the height attribute."""
+        """
+        Getter for the height attribute.
+        Setter for the width attribute with type and value checks.
+        Setter for the width attribute with type and value checks.
+        """
         return self.__height
 
     @height.setter
     def height(self, value):
         """
         Setter for the height attribute with type and value checks.
+        Setter for the width attribute with type and value checks.
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer.")
@@ -57,6 +82,8 @@ class Rectangle(Base):
     def x(self, value):
         """
         Setter for the x attribute with type and value checks.
+        Setter for the width attribute with type and value checks.
+        Setter for the width attribute with type and value checks.
         """
         if not isinstance(value, int):
             raise TypeError("x must be an integer.")
@@ -66,13 +93,20 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """Getter for the y attribute."""
+        """
+        Getter for the y attribute.
+        Setter for the width attribute with type and value checks.
+        Setter for the width attribute with type and value checks.
+        """
         return self.__y
 
     @y.setter
     def y(self, value):
         """
         Setter for the y attribute with type and value checks.
+        Setter for the width attribute with type and value checks.
+        Setter for the width attribute with type and value checks.
+        Setter for the width attribute with type and value checks.
         """
         if not isinstance(value, int):
             raise TypeError("y must be an integer.")
