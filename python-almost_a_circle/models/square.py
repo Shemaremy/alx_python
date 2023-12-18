@@ -33,14 +33,7 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-#if __name__ == "__main__":
-    # Example usage:
-#    square = Square(5)
-#    print(square) # Output: [Square] (None) 0/0 - 5
 
-#    square.size = 8
-#    print(square) # Output: [Square] (None) 0/0 - 8    
-
-#    def __str__(self):
-#        """Returns a string representation of the square."""
-#        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
+    def __str__(self):
+        """Returns a string representation of the square."""
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
