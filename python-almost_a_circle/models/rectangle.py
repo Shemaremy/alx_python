@@ -1,7 +1,3 @@
-"""
-Creating a base class and 
-everything will be included inside here
-"""
 
 from base import Base
 """
