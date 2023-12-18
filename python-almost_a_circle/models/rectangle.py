@@ -1,3 +1,9 @@
+'''
+Setter for the width attribute with type and value checks.
+Setter for the width attribute with type and value checks.
+Setter for the width attribute with type and value checks.
+'''
+
 from models.base import Base
 '''
 Importing from Base class
