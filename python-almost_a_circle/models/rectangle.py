@@ -128,6 +128,15 @@ class Rectangle(Base):
         width and height
         '''
         return self.__width * self.__height
+    
+    def display(self):
+        '''
+        This display method 
+        prints a rectangle which 
+        is made of # characters
+        '''
+        for _ in range(self.__height):
+            print("#" * self.__width)
 
 
 
