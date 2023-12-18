@@ -2,7 +2,7 @@
 '''
 Importing from Base class
 '''
-from base import Base
+from models.base import Base
 '''
 Creating another class 
 called rectangle
@@ -75,7 +75,7 @@ rectangle_import = __import__('models.base').rectangle
 if rectangle_import is None:
     print("Can't import models.rectangle")
     exit(1)
-
+th
 rectangle_class = rectangle_import.__dict__.get('Rectangle')
 if rectangle_class is None:
     print("Can't find class Rectangle in models.rectangle")
