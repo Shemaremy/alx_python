@@ -121,8 +121,14 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        '''
+        This is a public method
+        that calculates and returns the area
+        of the rectangle instance based on its
+        width and height
+        '''
         return self.__width * self.__height
-        
+
 
 
 # Example usage:
