@@ -1,131 +1,89 @@
-"""
-Creating a base class and 
-everything will be included inside here
-"""
-class Base:
-    """
-    Base class with an id attribute and basic getters and setters.
-    """
-    def __init__(self, id=None):
-        """
-        Base class constructor.
+# rectangle.py
 
-        Parameters:
-        - id: Optional identifier.
-        """
-        self.id = id
-
-    def get_id(self):
-        """
-        Getter for the id attribute.
-
-        Returns:
-        - Current id value.
-        """
-        return self.id
-
-    def set_id(self, new_id):
-        """
-        Setter for the id attribute.
-
-        Parameters:
-        - new_id: New id value.
-        """
-        self.id = new_id
-
+from base import Base
 
 class Rectangle(Base):
     """
-    Rectangle class that inherits from Base with additional attributes
-    for width, height, x, and y. It provides getters and setters for each attribute.
+    A class representing a Rectangle object, inheriting from the Base class.
+
+    Attributes:
+    - __width (int): A private instance attribute representing the width of the rectangle.
+    - __height (int): A private instance attribute representing the height of the rectangle.
+    - __x (int): A private instance attribute representing the x-coordinate of the rectangle.
+    - __y (int): A private instance attribute representing the y-coordinate of the rectangle.
+
+    Methods:
+    - __init__: The constructor method to initialize the Rectangle object.
+    - width: Getter and setter for the width attribute.
+    - height: Getter and setter for the height attribute.
+    - x: Getter and setter for the x attribute.
+    - y: Getter and setter for the y attribute.
     """
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Rectangle class constructor. Calls the superclass constructor and assigns
-        values to width, height, x, and y.
+        Initializes a Rectangle object.
 
         Parameters:
-        - width: Width of the rectangle.
-        - height: Height of the rectangle.
-        - x: X-coordinate of the rectangle (default is 0).
-        - y: Y-coordinate of the rectangle (default is 0).
-        - id: Optional identifier.
+        - width (int): The width of the rectangle.
+        - height (int): The height of the rectangle.
+        - x (int): The x-coordinate of the rectangle.
+        - y (int): The y-coordinate of the rectangle.
+        - id (int): An optional parameter representing the identifier for the object.
         """
-        super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        super().__init__(id) # Call the superclass constructor with id
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
-    def get_width(self):
-        """
-        Getter for the width attribute.
-
-        Returns:
-        - Current width value.
-        """
+    @property
+    def width(self):
+        """Getter for the width attribute."""
         return self.__width
 
-    def set_width(self, new_width):
-        """
-        Setter for the width attribute.
+    @width.setter
+    def width(self, value):
+        """Setter for the width attribute."""
+        self.__width = value
 
-        Parameters:
-        - new_width: New width value.
-        """
-        self.__width = new_width
-
-    def get_height(self):
-        """
-        Getter for the height attribute.
-
-        Returns:
-        - Current height value.
-        """
+    @property
+    def height(self):
+        """Getter for the height attribute."""
         return self.__height
 
-    def set_height(self, new_height):
-        """
-        Setter for the height attribute.
+    @height.setter
+    def height(self, value):
+        """Setter for the height attribute."""
+        self.__height = value
 
-        Parameters:
-        - new_height: New height value.
-        """
-        self.__height = new_height
-
-    def get_x(self):
-        """
-        Getter for the x attribute.
-
-        Returns:
-        - Current x value.
-        """
+    @property
+    def x(self):
+        """Getter for the x attribute."""
         return self.__x
 
-    def set_x(self, new_x):
-        """
-        Setter for the x attribute.
+    @x.setter
+    def x(self, value):
+        """Setter for the x attribute."""
+        self.__x = value
 
-        Parameters:
-        - new_x: New x value.
-        """
-        self.__x = new_x
-
-    def get_y(self):
-        """
-        Getter for the y attribute.
-
-        Returns:
-        - Current y value.
-        """
+    @property
+    def y(self):
+        """Getter for the y attribute."""
         return self.__y
 
-    def set_y(self, new_y):
-        """
-        Setter for the y attribute.
+    @y.setter
+    def y(self, value):
+        """Setter for the y attribute."""
+        self.__y = value
 
-        Parameters:
-        - new_y: New y value.
-        """
-        self.__y = new_y
+# Example usage:
+#if __name__ == "__main__":
+#    rectangle = Rectangle(10, 20, 5, 7, 1)
+#    print(rectangle.id) # Output: 1
+#    print(rectangle.width) # Output: 10
+#    print(rectangle.height) # Output: 20
+#    print(rectangle.x) # Output: 5
+#    print(rectangle.y) # Output: 7
+
 
