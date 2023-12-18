@@ -1,28 +1,14 @@
-'''
-Importing from Base class
-Which will be performing
-various operations to satisfy task 1
-
-'''
 from models.base import Base
 '''
-Creating another class 
-called rectangle
-that will inherit from Base class
-in the base file
-
+dedefeffedede
+dededefefefedef
+efedefede
 '''
 class Rectangle(Base):
-    '''
-    After the creation of the first class
-    that will be inheriting from the Base class in the base file
-    '''
-
+   
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Initializinf a Rectangle object
-        and assigning x to 0, y to 0, and
-        id to None
+        Initialize a Rectangle object with width, height, x, y, and id.
         """
         super().__init__(id) 
         self.width = width
@@ -37,7 +23,13 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """Setter for the width attribute."""
+        """
+        Setter for the width attribute with type and value checks.
+        """
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer.")
+        if value <= 0:
+            raise ValueError("width must be > 0.")
         self.__width = value
 
     @property
@@ -47,7 +39,13 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        """Setter for the height attribute."""
+        """
+        Setter for the height attribute with type and value checks.
+        """
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer.")
+        if value <= 0:
+            raise ValueError("height must be > 0.")
         self.__height = value
 
     @property
@@ -57,7 +55,13 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        """Setter for the x attribute."""
+        """
+        Setter for the x attribute with type and value checks.
+        """
+        if not isinstance(value, int):
+            raise TypeError("x must be an integer.")
+        if value < 0:
+            raise ValueError("x must be >= 0.")
         self.__x = value
 
     @property
@@ -67,8 +71,15 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        """Setter for the y attribute."""
+        """
+        Setter for the y attribute with type and value checks.
+        """
+        if not isinstance(value, int):
+            raise TypeError("y must be an integer.")
+        if value < 0:
+            raise ValueError("y must be >= 0.")
         self.__y = value
+
 
 # Example usage:
 #if __name__ == "__main__":
