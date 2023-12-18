@@ -8,35 +8,12 @@ Creating another class
 called rectangle
 '''
 class Rectangle(Base):
-    """
-    A class representing a Rectangle object, inheriting from the Base class.
-
-    Attributes:
-    - __width (int): A private instance attribute representing the width of the rectangle.
-    - __height (int): A private instance attribute representing the height of the rectangle.
-    - __x (int): A private instance attribute representing the x-coordinate of the rectangle.
-    - __y (int): A private instance attribute representing the y-coordinate of the rectangle.
-
-    Methods:
-    - __init__: The constructor method to initialize the Rectangle object.
-    - width: Getter and setter for the width attribute.
-    - height: Getter and setter for the height attribute.
-    - x: Getter and setter for the x attribute.
-    - y: Getter and setter for the y attribute.
-    """
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Initializes a Rectangle object.
-
-        Parameters:
-        - width (int): The width of the rectangle.
-        - height (int): The height of the rectangle.
-        - x (int): The x-coordinate of the rectangle.
-        - y (int): The y-coordinate of the rectangle.
-        - id (int): An optional parameter representing the identifier for the object.
+        Initializinf a Rectangle object
         """
-        super().__init__(id) # Call the superclass constructor with id
+        super().__init__(id) 
         self.width = width
         self.height = height
         self.x = x
@@ -91,4 +68,27 @@ class Rectangle(Base):
 #    print(rectangle.x) # Output: 5
 #    print(rectangle.y) # Output: 7
 
+import inspect
 
+rectangle_import = __import__('models.base').rectangle
+
+if rectangle_import is None:
+    print("Can't import models.rectangle")
+    exit(1)
+
+rectangle_class = rectangle_import.__dict__.get('Rectangle')
+if rectangle_class is None:
+    print("Can't find class Rectangle in models.rectangle")
+    exit(1)
+
+if not inspect.isclass(rectangle_class):
+    print("Rectangle is not a class")
+    exit(1)
+
+from models.base import Base 
+
+if not issubclass(rectangle_class, Base):
+    print("Rectangle is not a subclass of Base")
+    exit(1)
+
+print("OK", end="")
