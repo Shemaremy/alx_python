@@ -1,16 +1,28 @@
 '''
 Importing from Base class
+Which will be performing
+various operations to satisfy task 1
+
 '''
 from models.base import Base
 '''
 Creating another class 
 called rectangle
+that will inherit from Base class
+in the base file
+
 '''
 class Rectangle(Base):
+    '''
+    After the creation of the first class
+    that will be inheriting from the Base class in the base file
+    '''
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         Initializinf a Rectangle object
+        and assigning x to 0, y to 0, and
+        id to None
         """
         super().__init__(id) 
         self.width = width
