@@ -144,7 +144,7 @@ class Rectangle(Base):
         overriden to return a formatted string
         representing the Rectangle instance
         '''
-        return f"[Rectangle]({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
 
 
 # Example usage:
