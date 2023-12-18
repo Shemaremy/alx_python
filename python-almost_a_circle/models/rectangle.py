@@ -1,5 +1,3 @@
-
-from base import Base
 """
 Creating a base class and 
 everything will be included inside here
