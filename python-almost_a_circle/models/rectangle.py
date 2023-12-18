@@ -1,4 +1,3 @@
-# rectangle.py
 '''
 Importing from Base class
 '''
