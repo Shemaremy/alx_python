@@ -7,6 +7,4 @@ import requests
 url = "https://alu-intranet.hbtn.io/status"
 
 response = requests.get(url)
-print("Body response:")
-print("        - type: {}".format(type(response.text)))
-print("        - content: {}".format(response.text))
+print(f"Body response:\n        - type: {type(response.text)}\n        - content: {response.text}")
