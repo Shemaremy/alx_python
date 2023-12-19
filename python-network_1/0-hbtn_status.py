@@ -6,3 +6,5 @@ package requests
 import requests
 url = "https://alu-intranet.hbtn.io/status"
 
+response = requests.get(url)
+print(response.text)
