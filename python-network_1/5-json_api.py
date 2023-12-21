@@ -10,7 +10,7 @@ try:
     if js:
         uid = js.get('id', '')
         uname = js.get('name', '')
-        print(f"[{uid}]{uname}" if uid and uname else "No result")
+        print(f"[{uid}] {uname}" if uid and uname else "No result")
     
     else:
         print("No result")
