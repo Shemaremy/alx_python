@@ -11,8 +11,8 @@ resp = requests.get(url, auth=auth)
 if resp.status_code == 200:
     udata = resp.json()
     uid = udata.get('id', '')
-    print(f"Your Id; {uid}" if uid else "Unable")
+    print(f"{uid}" if uid else "Unable")
 
 else:
-    print(f"Error: {resp.status_code}")
+    print("None")
 
