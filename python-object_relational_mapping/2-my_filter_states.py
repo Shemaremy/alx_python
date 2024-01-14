@@ -9,8 +9,8 @@ def search_state(username, password, database, state_name):
     cursor = db.cursor()
 
     # Execute the query to retrieve the matching states from the specified database
-    query = "SELECT * FROM states WHERE name = %s ORDER BY states.id ASC"
-    cursor.execute(query, (state_name,))
+    query = "SELECT * FROM states WHERE name = '{}' ORDER BY states.id ASC".format(state_name)
+    cursor.execute(query)
 
     # Fetch all the rows
     states = cursor.fetchall()
@@ -36,4 +36,3 @@ if __name__ == "__main__":
 
         # Call the function to search for the specified state
         search_state(mysql_username, mysql_password, database_name, state_name)
-
