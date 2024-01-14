@@ -8,14 +8,14 @@ def list_states(username, password, database):
     # Create a cursor object to interact with the database
     cursor = db.cursor()
 
-    # Execute the query to retrieve the states from the hbtn_0e_0_usa database
+    # Executing the query to retrieve the states from the hbtn_0e_0_usa database
     query = "SELECT * FROM states ORDER BY states.id ASC"
     cursor.execute(query)
 
     # Fetch all the rows
     states = cursor.fetchall()
 
-    # Display the results
+    # Display the resultss
     for state in states:
         print(state)
 
