@@ -3,10 +3,10 @@ import sys
 
 def list_states(username, password, database):
     # Connect to the MySQL server
-    flacko = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, flacko=database)
+    db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database)
 
     # Create a cursor object to interact with the database
-    cursor = flacko.cursor()
+    cursor = db.cursor()
 
     # Executing the query to retrieve the states from the hbtn_0e_0_usa database
     query = "SELECT * FROM states ORDER BY states.id ASC"
@@ -21,7 +21,7 @@ def list_states(username, password, database):
 
     # Close the cursor and database connection
     cursor.close()
-    flacko.close()
+    db.close()
 
 if __name__ == "__main__":
     # Check if all three arguments are provided
