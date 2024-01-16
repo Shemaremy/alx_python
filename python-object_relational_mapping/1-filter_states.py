@@ -9,17 +9,17 @@ def list_states_starting_with_n(username, password, database):
     cursor = db.cursor()
 
     # Execute the query to retrieve the states starting with 'N' from the hbtn_0e_0_usa database
-    #query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC"
-    query = "SELECT * FROM states WHERE UPPER(name) LIKE 'N%' ORDER BY states.id ASC"
-
+    query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC"
     cursor.execute(query)
 
     # Fetch all the rows
     states = cursor.fetchall()
 
-    # Display the results
+    # Display the results (case-insensitive)
     for state in states:
-        print(state)
+        # Check if the state name starts with 'N' (case-insensitive)
+        if state[1].upper().startswith('N'):
+            print(state)
 
     # Close the cursor and database connection
     cursor.close()
@@ -37,4 +37,3 @@ if __name__ == "__main__":
 
         # Call the function to list states starting with 'N'
         list_states_starting_with_n(mysql_username, mysql_password, database_name)
-
