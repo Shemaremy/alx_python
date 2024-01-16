@@ -16,8 +16,9 @@ def list_states(username, password, database):
     # Query and display all State objects in ascending order by states.id
     states = session.query(State).order_by(State.id).all()
 
+    # Print the results in the desired format
     for state in states:
-        print(state.id, state.name)
+        print(f"{state.id}: {state.name}")
 
     # Close the session
     session.close()
@@ -35,4 +36,3 @@ if __name__ == "__main__":
 
         # Call the function to list all State objects
         list_states(mysql_username, mysql_password, database_name)
-
