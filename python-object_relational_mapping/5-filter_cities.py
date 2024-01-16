@@ -21,9 +21,9 @@ def list_cities_by_state(username, password, database, state_name):
     # Fetch all the rows
     cities = cursor.fetchall()
 
-    # Display the city names
-    for city in cities:
-        print(city[0])
+    # Display the city names in the desired format
+    city_names = [city[0] for city in cities]
+    print(", ".join(city_names))
 
     # Close the cursor and database connection
     cursor.close()
