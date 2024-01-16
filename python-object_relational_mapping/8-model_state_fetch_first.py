@@ -1,10 +1,14 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
+import logging
 
 def print_first_state(username, password, database):
+    # Suppress SQLAlchemy logging
+    logging.getLogger('sqlalchemy.engine').setLevel(logging.INFO)
+
     # Connect to the MySQL server
-    engine = create_engine(f'mysql://{username}:{password}@localhost:3306/{database}', echo=True)
+    engine = create_engine(f'mysql://{username}:{password}@localhost:3306/{database}')
 
     # Bind the engine to the Base class
     Base.metadata.create_all(engine)
@@ -37,4 +41,3 @@ if __name__ == "__main__":
 
         # Call the function to print the first State object
         print_first_state(mysql_username, mysql_password, database_name)
-
