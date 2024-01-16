@@ -5,6 +5,18 @@ from sqlalchemy.orm import sessionmaker
 Base = declarative_base()
 
 class State(Base):
+    """
+    State class representing a table in the MySQL database.
+
+    Attributes:
+    - id: An auto-generated, unique integer representing the primary key.
+          It can't be null.
+    - name: A string with a maximum of 128 characters representing the state name.
+            It can't be null.
+
+    Table: states
+    """
+
     __tablename__ = 'states'
 
     id = Column(Integer, primary_key=True, nullable=False, unique=True)
@@ -28,4 +40,3 @@ if __name__ == "__main__":
 
     # Close the session
     session.close()
-
