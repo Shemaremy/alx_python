@@ -1,15 +1,20 @@
 import MySQLdb
 import sys
 
-def list_cities(username, password, database):
+def list_cities_with_states(username, password, database):
     # Connect to the MySQL server
     db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database)
 
     # Create a cursor object to interact with the database
     cursor = db.cursor()
 
-    # Execute the query to retrieve all cities from the specified database
-    query = "SELECT * FROM cities ORDER BY cities.id ASC"
+    # Execute the query to retrieve cities with their corresponding states from the specified database
+    query = """
+    SELECT cities.id, cities.name, states.name
+    FROM cities
+    INNER JOIN states ON cities.state_id = states.id
+    ORDER BY cities.id ASC
+    """
     cursor.execute(query)
 
     # Fetch all the rows
@@ -33,5 +38,5 @@ if __name__ == "__main__":
         mysql_password = sys.argv[2]
         database_name = sys.argv[3]
 
-        # Call the function to list cities
-        list_cities(mysql_username, mysql_password, database_name)
+        # Call the function to list cities with their corresponding states
+        list_cities_with_states(mysql_username, mysql_password, database_name)
