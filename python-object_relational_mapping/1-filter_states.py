@@ -9,7 +9,9 @@ def list_states_starting_with_n(username, password, database):
     cursor = db.cursor()
 
     # Execute the query to retrieve the states starting with 'N' from the hbtn_0e_0_usa database
-    query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC"
+    #query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC"
+    query = "SELECT * FROM states WHERE UPPER(name) LIKE 'N%' ORDER BY states.id ASC"
+
     cursor.execute(query)
 
     # Fetch all the rows
