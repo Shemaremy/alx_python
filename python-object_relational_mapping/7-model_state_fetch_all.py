@@ -1,10 +1,14 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
+import logging
 
-def print_first_state(username, password, database):
+def list_states(username, password, database):
     # Connect to the MySQL server
     engine = create_engine(f'mysql://{username}:{password}@localhost:3306/{database}')
+
+    # Suppress SQLAlchemy logging
+    logging.getLogger('sqlalchemy.engine').setLevel(logging.INFO)
 
     # Bind the engine to the Base class
     Base.metadata.create_all(engine)
@@ -13,13 +17,12 @@ def print_first_state(username, password, database):
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    # Query and display the first State object based on states.id
-    first_state = session.query(State).order_by(State.id).first()
+    # Query and display all State objects in ascending order by states.id
+    states = session.query(State).order_by(State.id).all()
 
-    if first_state:
-        print(f"{first_state.id}: {first_state.name}")
-    else:
-        print("Nothing")
+    # Print the results in the desired format
+    for state in states:
+        print(f"{state.id}: {state.name}")
 
     # Close the session
     session.close()
@@ -35,5 +38,5 @@ if __name__ == "__main__":
         mysql_password = sys.argv[2]
         database_name = sys.argv[3]
 
-        # Call the function to print the first State object
-        print_first_state(mysql_username, mysql_password, database_name)
+        # Call the function to list all State objects
+        list_states(mysql_username, mysql_password, database_name)
