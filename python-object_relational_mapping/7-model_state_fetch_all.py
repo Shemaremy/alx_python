@@ -1,10 +1,14 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
+import logging
 
 def list_states(username, password, database):
     # Connect to the MySQL server
-    engine = create_engine(f'mysql://{username}:{password}@localhost:3306/{database}', echo=True)
+    engine = create_engine(f'mysql://{username}:{password}@localhost:3306/{database}')
+
+    # Suppress SQLAlchemy logging
+    logging.getLogger('sqlalchemy.engine').setLevel(logging.INFO)
 
     # Bind the engine to the Base class
     Base.metadata.create_all(engine)
