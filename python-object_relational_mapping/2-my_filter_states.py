@@ -8,7 +8,7 @@ def search_state(username, password, database, state_name):
     # Create a cursor object to interact with the database
     cursor = db.cursor()
 
-    # Execute the query to retrieve the exact matching states from the specified database (case-insensitive)
+    # Execute the query to retrieve the exact matching state from the specified database (case-insensitive)
     query = "SELECT * FROM states WHERE LOWER(name) = LOWER('{}') ORDER BY states.id ASC".format(state_name)
     cursor.execute(query)
 
