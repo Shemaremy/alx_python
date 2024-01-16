@@ -8,9 +8,9 @@ def list_cities_by_state(username, password, database, state_name):
     # Create a cursor object to interact with the database
     cursor = db.cursor()
 
-    # Execute the query to retrieve cities of the specified state in ascending order by cities.id
+    # Execute the query to retrieve city names of the specified state in ascending order by cities.id
     query = """
-    SELECT cities.id, cities.name
+    SELECT cities.name
     FROM cities
     JOIN states ON cities.state_id = states.id
     WHERE states.name = %s
@@ -21,9 +21,9 @@ def list_cities_by_state(username, password, database, state_name):
     # Fetch all the rows
     cities = cursor.fetchall()
 
-    # Display the results
+    # Display the city names
     for city in cities:
-        print(city)
+        print(city[0])
 
     # Close the cursor and database connection
     cursor.close()
@@ -40,6 +40,5 @@ if __name__ == "__main__":
         database_name = sys.argv[3]
         state_name = sys.argv[4]
 
-        # Call the function to list cities of the specified state
+        # Call the function to list city names of the specified state
         list_cities_by_state(mysql_username, mysql_password, database_name, state_name)
-
