@@ -6,12 +6,12 @@ Base = declarative_base()
 
 class State(Base):
     """
-    State class representing a table in the MySQL database.
+    State class representing a table in the MySQL database
 
     Attributes:
-    - id: An auto-generated, unique integer representing the primary key.
+    - id: An auto-generated, unique integer representing the primary key
           It can't be null.
-    - name: A string with a maximum of 128 characters representing the state name.
+    - name: A string with a maximum of 128 characters representing the state name
             It can't be null.
 
     Table: states
