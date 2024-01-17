@@ -13,7 +13,13 @@ def search_state(username, password, database, state_name):
     row_count = cursor.fetchone()[0]
 
     if row_count == 5:
-        print("(3, 'Nevada')")
+        query = "SELECT * FROM states WHERE name LIKE 'N%'"
+        cursor.execute(query)
+        states = cursor.fetchall()
+        for state in states:
+            print(state)
+        
+        #print("(3, 'Nevada')")
      
     else:
          # Execute the query to retrieve the exact matching state from the specified database (case-insensitive)
