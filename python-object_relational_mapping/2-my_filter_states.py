@@ -31,8 +31,8 @@ def search_state(username, password, database, state_name):
         states = cursor.fetchall()
 
         
-        for state in states:
-            print(state)
+        
+        print(state)
     
     # Close the cursor and database connection
     cursor.close()
