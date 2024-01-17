@@ -1,41 +1,46 @@
-# Import the MySQLdb module and sys module
+'''
+ We are obliged to import MYSQLdb and sys modules because:
+ 
+     - MySQLdb: Helps to connect to the MySQL server and interacting with the database
+     - sys: Used to handle command-line arguments and other system-related tasks
+
+Qn:  This program will display all states in states table which is in database hbtn_0_usa
+
+'''
 import MySQLdb
 import sys
 
-# Define a function named list_states that takes three parameters: username, password, and database
 def list_states(username, password, database):
-    # Connect to the MySQL server using the provided parameters
+    
     db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database)
-    # host, port, user, passwd,db
-
-    # Create a cursor object to interact with the database
     cursor = db.cursor()
-
-    # Define a SQL query to retrieve all columns (*) from the states table, ordered by id in ascending order
     query = "SELECT * FROM states ORDER BY states.id ASC"
-
-    # Execute the SQL query using the cursor
     cursor.execute(query)
-
-    # Fetch all the rows returned by the query
     states = cursor.fetchall()
 
-    # Iterate through the fetched rows and print each row (state)
     for state in states:
         print(state)
 
-    # Close the cursor to release resources
-    cursor.close()
 
-    # Close the database connection
-    db.close()
+    cursor.close()                                    
+    db.close()                          # Close the database connection
 
-# Check if the script is being run directly (not imported)
-if __name__ == "__main__":
-    # Check if exactly three command-line arguments are provided
-    if len(sys.argv) != 4:
-        # If not, print a usage message and exit
-        print("Usage: python script.py <mysql_username> <mysql_password> <database_name>")
+
+
+
+
+
+if __name__ == "__main__":                       # Check if the script is being run directly (not imported)
+    
+    if len(sys.argv) != 4:                       # Check if exactly three command-line arguments(mysql username, mysql password and database name) are provided
+    
+     '''The reason we said 4 instead of 3, is because its the 3 cmd line arguments
+        plus the script name which is script.py. Always add a script name !!
+
+     '''
+         
+     print(": python script.py <mysql_username> <mysql_password> <database_name>")
+
     else:
         # If three arguments are provided, extract them
         mysql_username = sys.argv[1]
