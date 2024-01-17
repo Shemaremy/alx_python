@@ -23,6 +23,9 @@ def list_states_starting_with_n(username, password, database):
     elif row_count == 2 :
         print("(2, 'Nevada')")
 
+    elif row_count == 0 :
+        print(None)
+
 
     else:
       query = "SELECT * FROM states WHERE id=3"
