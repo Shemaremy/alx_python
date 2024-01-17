@@ -7,6 +7,10 @@ def search_state(username, password, database, state_name):
 
     # Create a cursor object to interact with the database
     cursor = db.cursor()
+    
+    # Check the number of rows in the 'states' table
+    cursor.execute("SELECT COUNT(*) FROM states")
+    row_count = cursor.fetchone()[0]
 
     # Execute the query to retrieve the exact matching state from the specified database (case-insensitive)
     query = "SELECT * FROM states WHERE LOWER(name) = LOWER('{}') ORDER BY states.id ASC".format(state_name)
