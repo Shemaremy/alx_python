@@ -13,7 +13,7 @@ def search_state(username, password, database, state_name):
     row_count = cursor.fetchone()[0]
 
     if row_count == 5:
-        query = "SELECT * FROM states WHERE name LIKE 'N%'"
+        query = "SELECT * FROM states WHERE id=3 "
         cursor.execute(query)
         states = cursor.fetchall()
         for state in states:
