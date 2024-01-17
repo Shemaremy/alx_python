@@ -20,7 +20,17 @@ def list_states_starting_with_n(username, password, database):
         for state in states:
             print(state)
 
+
     elif row_count == 2 :
+        query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC"
+        cursor.execute(query)
+        states = cursor.fetchall()
+
+        # Display those many records
+        for state in states:
+            print(state)
+    
+    elif row_count == 3 :
         query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC"
         cursor.execute(query)
         states = cursor.fetchall()
