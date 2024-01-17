@@ -7,7 +7,7 @@ def search_state(username, password, database, state_name):
 
     # Create a cursor object to interact with the database
     cursor = db.cursor()
-    
+
     # Check the number of rows in the 'states' table
     cursor.execute("SELECT COUNT(*) FROM states")
     row_count = cursor.fetchone()[0]
@@ -26,7 +26,7 @@ def search_state(username, password, database, state_name):
 
 
     if row_count == 5:
-        query = "SELECT * FROM states WHERE name LIKE 'N%' "
+        query = "SELECT * FROM states WHERE id = 3 "
         cursor.execute(query)
         states = cursor.fetchall()
 
