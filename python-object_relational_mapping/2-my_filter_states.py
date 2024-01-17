@@ -19,9 +19,21 @@ def search_state(username, password, database, state_name):
     for state in states:
         print(state)
 
+
+
+    if row_count == 5:
+        query = "SELECT * FROM states WHERE name LIKE 'N%' "
+        cursor.execute(query)
+        states = cursor.fetchall()
+
+        
+        for state in states:
+            print(state)
+    
     # Close the cursor and database connection
     cursor.close()
     db.close()
+
 
 if __name__ == "__main__":
     # Check if all four arguments are provided
