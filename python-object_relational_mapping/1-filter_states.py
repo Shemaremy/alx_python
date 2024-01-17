@@ -28,6 +28,7 @@ def list_states_starting_with_n(username, password, database):
       query = "SELECT * FROM states WHERE id=3"
       cursor.execute(query)
       states = cursor.fetchall()  
+      print(states)
 
     # Close the cursor and database connection
     cursor.close()
