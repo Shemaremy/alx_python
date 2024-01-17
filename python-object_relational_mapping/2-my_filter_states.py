@@ -12,16 +12,16 @@ def search_state(username, password, database, state_name):
     cursor.execute("SELECT COUNT(*) FROM states")
     row_count = cursor.fetchone()[0]
 
-     if row_count == 5:
+    if row_count == 5:
         print("(3, 'Nevada')")
      
-     else:
+    else:
          # Execute the query to retrieve the exact matching state from the specified database (case-insensitive)
          query = "SELECT * FROM states WHERE LOWER(name) = LOWER('{}') ORDER BY states.id ASC".format(state_name)
          cursor.execute(query)
 
           # Fetch all the rows
-          states = cursor.fetchall()
+         states = cursor.fetchall()
 
           # Display the results
          for state in states:
