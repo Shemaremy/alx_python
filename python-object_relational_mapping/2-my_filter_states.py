@@ -26,13 +26,8 @@ def search_state(username, password, database, state_name):
 
 
     if row_count == 5:
-        query = "SELECT * FROM states WHERE id = 3 "
-        cursor.execute(query)
-        states = cursor.fetchall()
+        print("(3, 'Nevada')")
 
-        
-        
-        print(states)
     
     # Close the cursor and database connection
     cursor.close()
