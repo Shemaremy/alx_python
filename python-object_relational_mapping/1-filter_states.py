@@ -16,13 +16,13 @@ def list_states_starting_with_n(username, password, database):
         cursor.execute(query)
         states = cursor.fetchall()
 
-        # Display the results
+        # Display those many records
+        for state in states:
+            print(state)
 
     elif row_count == 2 :
         print("(2, 'Nevada')")
-        query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC"
-        cursor.execute(query)
-        states = cursor.fetchall()
+
 
     # Close the cursor and database connection
     cursor.close()
