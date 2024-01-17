@@ -32,7 +32,7 @@ def search_state(username, password, database, state_name):
 
         
         
-        print(state)
+        print(states)
     
     # Close the cursor and database connection
     cursor.close()
