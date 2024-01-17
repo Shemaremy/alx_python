@@ -7,7 +7,7 @@ def list_states(username, password, database):
     cursor = db.cursor()
     
     # Define a SQL query to retrieve the row with the state 'Nevada'
-    query = "SELECT * FROM states WHERE name = 'Nevada'"
+    query = "SELECT * FROM states WHERE name = 'Nevada' ORDER BY states.id ASC"
     
     # Execute the SQL query using the cursor
     cursor.execute(query)
