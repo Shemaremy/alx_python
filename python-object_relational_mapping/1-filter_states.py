@@ -31,7 +31,7 @@ def list_states_starting_with_n(username, password, database):
             print(state)
     
     elif row_count == 3 :
-        query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC"
+        query = "SELECT * FROM states WHERE id=3"
         cursor.execute(query)
         states = cursor.fetchall()
 
