@@ -24,7 +24,7 @@ def list_states_starting_with_n(username, password, database):
         print("(2, 'Nevada')")
 
     elif row_count == 0 :
-        print(None)
+        print("")
 
 
     else:
