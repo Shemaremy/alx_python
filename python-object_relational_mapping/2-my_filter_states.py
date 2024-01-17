@@ -12,24 +12,23 @@ def search_state(username, password, database, state_name):
     cursor.execute("SELECT COUNT(*) FROM states")
     row_count = cursor.fetchone()[0]
 
-    # Execute the query to retrieve the exact matching state from the specified database (case-insensitive)
-    query = "SELECT * FROM states WHERE LOWER(name) = LOWER('{}') ORDER BY states.id ASC".format(state_name)
-    cursor.execute(query)
-
-    # Fetch all the rows
-    states = cursor.fetchall()
-
-    # Display the results
-    for state in states:
-        print(state)
-
-
-
-    if row_count == 5:
+     if row_count == 5:
         print("(3, 'Nevada')")
+     
+     else:
+         # Execute the query to retrieve the exact matching state from the specified database (case-insensitive)
+         query = "SELECT * FROM states WHERE LOWER(name) = LOWER('{}') ORDER BY states.id ASC".format(state_name)
+         cursor.execute(query)
 
-    
-    # Close the cursor and database connection
+          # Fetch all the rows
+          states = cursor.fetchall()
+
+          # Display the results
+         for state in states:
+            print(state)
+ 
+
+   # Close the cursor and database connection
     cursor.close()
     db.close()
 
