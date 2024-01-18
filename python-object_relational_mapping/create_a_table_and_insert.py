@@ -1,4 +1,5 @@
 import MySQLdb
+import sys
 
 def create_database_and_table():
     db = MySQLdb.connect(host="localhost", port=3306, user="root", passwd="Mamitoremy#1234")
