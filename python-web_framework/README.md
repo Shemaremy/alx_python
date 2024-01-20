@@ -44,8 +44,8 @@ while Flask is for the web applications
 
 
 
-## 2. HOW DO WE BUILD WEB FRAMEWORKS USING FLASK
-      _________________________________________
+## 2. HOW DO WE BUILD WEB APPLICATIONS USING FLASK
+      ____________________________________________
 
 
 
