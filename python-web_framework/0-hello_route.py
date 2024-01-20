@@ -9,8 +9,7 @@ from flask import Flask
 # Creation of a Flask web application instance
 a = Flask(__name__)
 
-# In the question, they told us to use the option      'strict_slashes=False'      in our route definition
-
+# Define the route for the root URL ("/") with strict_slashes=False
 @a.route('/', strict_slashes=False)
 def hello_hbnb():
     return 'Hello HBNB!'
