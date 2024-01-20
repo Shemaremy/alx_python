@@ -129,6 +129,13 @@ toolkit
 
 
 
+## 6. HOW TO DEFINE ROUTES IN FLASK.
+      _____________________________
+
+Look up in the file i created called routesexplanation
+you will see how I defined them. But the steps
+are as follows:
+
 
 
 
