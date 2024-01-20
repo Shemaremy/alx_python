@@ -1,12 +1,13 @@
 
 from flask import Flask
-      '''
-       By here, we are  importing the Flask class from the flask web framework. 
-       Flask is a micro web framework for Python that simplifies the process of building web applications. 
-       The Flask class is a core component of Flask and is used to create a web application instance.
 
-       '''
+'''
+By here, we are  importing the Flask class from the flask web framework. 
+Flask is a micro web framework for Python that simplifies the process of building web applications. 
+The Flask class is a core component of Flask and is used to create a web application instance.
 
+'''
+# Create a Flask web application instance
 app = Flask(__name__)
 
 # Define the route for the root URL ("/") with strict_slashes=False
