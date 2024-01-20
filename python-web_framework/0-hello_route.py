@@ -7,10 +7,10 @@ The Flask class is a core component of Flask and is used to create a web applica
 from flask import Flask
 
 # Creation of a Flask web application instance
-a = Flask(__name__)
+app = Flask(__name__)
 
 # Define the route for the root URL ("/") with strict_slashes=False
-@a.route('/', strict_slashes=False)
+@app.route('/', strict_slashes=False)
 def hello_hbnb():
     return 'Hello HBNB!'
 
