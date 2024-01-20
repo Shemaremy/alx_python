@@ -138,12 +138,21 @@ are as follows:
 
 a) Import Flask from flask
 b) Create an instance named (app) of the Flask class (always instance name is app otherwise, an error)
+ex:                  app = Flask(__name__)
 
 c) Let the page name be x then it will be like @app.route(/'x').        Mostly, that codeline goes with        function under it
 
 d) Define a function under which will return 
    a certain prompt or another thing after the url x is run
 
+
+ex:
+
+import
+app = Flask(__name__)
+@app.route('/')
+def m()
+   return ...
 
 
             
