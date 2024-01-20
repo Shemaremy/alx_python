@@ -136,6 +136,14 @@ Look up in the file i created called Understand_routes.py
 you will see how I defined them. But the steps
 are as follows:
 
+a) Import Flask
+b) Create an instance of the Flask class
+c) Let the instance be a and the page name be x
+   then it will be like @a(/'x')
+
+d) Define a function under which will return 
+   a certain prompt after the url x is run
+
 
 
 
