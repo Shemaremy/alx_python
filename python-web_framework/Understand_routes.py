@@ -1,3 +1,4 @@
+# The codes below are how to define routes
 
 from flask import Flask
 
