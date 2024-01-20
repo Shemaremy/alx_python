@@ -4,6 +4,8 @@ Flask is a micro web framework for Python that simplifies the process of buildin
 The Flask class is a core component of Flask and is used to create a web application instance.
 
 '''
+
+
 from flask import Flask
 
 app = Flask(__name__)
