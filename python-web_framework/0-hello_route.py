@@ -1,18 +1,15 @@
-
-
 from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/imrunningcode')
-def home():
-    return 'Hello, this is the imrunningcode page!'
-
-@app.route('/about')
-def about():
-    return 'Welcome to the about page!'
+# Define the route for the root URL ("/") with strict_slashes=False
+@app.route('/', strict_slashes=False)
+def hello_hbnb():
+    return 'Hello HBNB!'
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Run the Flask app on 0.0.0.0, port 5000
+    app.run(host='0.0.0.0', port=5000)
+
 
 
