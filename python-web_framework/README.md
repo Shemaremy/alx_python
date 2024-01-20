@@ -5,8 +5,8 @@
 1. Web Framework
 2. Flask
 3. How to build a web framework with Flask
-4. How to define routes in Flask
-5. What is a route
+4. What is a route 
+5. How to define routes in Flask
 6. How to handle variables in a route
 6. What is a template
 7. How to create a HTML response in Flask by using a template
@@ -91,6 +91,43 @@ Here's a high-level overview:
    - Depending on the growth of your web app, consider strategies for scaling, such as load balancing and optimizing database performance.
 
 Remember to refer to the Flask documentation for detailed guidance and examples. Additionally, various Flask extensions are available to extend functionality based on your specific requirements.
+
+
+
+
+
+
+
+
+
+
+
+## 5. WHAT IS A ROUTE
+      ________________
+
+A route refers to a mapping between a URL 
+pattern and a function that should be executed 
+when a request with that specific URL is received.
+
+In other words, a route is essentially a way to 
+tell your web application what to do when 
+a user goes to a specific URL.
+
+Consider this analogy: Imagine your web application
+is like a restaurant, and each URL is a menu item. 
+A route is like a set of instructions for 
+what the kitchen (your application) 
+should do or cook when a customer (user) orders 
+a particular dish (visits a specific URL).
+
+A url is an order you're giving the kitchen to
+cook for you a certain meal you ordered
+
+Simply, a route is a concept not an app nor a 
+toolkit
+
+
+
 
 
 
