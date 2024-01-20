@@ -132,7 +132,7 @@ toolkit
 ## 6. HOW TO DEFINE ROUTES IN FLASK.
       _____________________________
 
-Look up in the file i created called routesexplanation
+Look up in the file i created called Understand_routes.py
 you will see how I defined them. But the steps
 are as follows:
 
