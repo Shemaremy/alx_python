@@ -25,11 +25,7 @@ def HBNB():
     return 'HBNB'
 
 
-@app.route('/c/<text>', strict_slashes=False)
-def C(text):
-    # Replace underscores with spaces in the text variable
-    text = text.replace('_', ' ')
-    return ('C',text)
+ 
 
 
 
