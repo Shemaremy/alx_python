@@ -29,7 +29,7 @@ def C(text):
     return 'C {}'.format(text)
 
 @app.route('/python/<text>', strict_slashes=False)
-def Python(text):
+def Python(text="is cool"):
     # Replacing _ with spaces as they told us to
     text = text.replace('_', ' ')
     return 'Python {}'.format(text)
