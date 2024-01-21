@@ -35,6 +35,7 @@ def Python(text):
     return 'Python {}'.format(text)
 
 
+# Here, they told us that the function Number must return only if n is an integer. We didn't check, instead we converted n to an integer on the first line like    <int:n>
 @app.route('/number/<int:n>', strict_slashes=False)
 def Number(n):
     return '{} is a number'.format(n)
