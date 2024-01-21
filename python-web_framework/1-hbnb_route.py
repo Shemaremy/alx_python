@@ -2,6 +2,7 @@
 By here, we are  importing the Flask class from the flask web framework. 
 Flask is a micro web framework for Python that simplifies the process of building web applications. 
 The Flask class is a core component of Flask and is used to create a web application instance.
+
 '''
 from flask import Flask
 
