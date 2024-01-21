@@ -35,9 +35,6 @@ def Python(text):
     return 'Python {}'.format(text)
 
 
-@app.errorhandler(404)
-def not_found(error):
-    return render_template('404.html'), 404
 
 
 if __name__ == '__main__':
