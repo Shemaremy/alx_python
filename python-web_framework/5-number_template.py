@@ -9,6 +9,14 @@
 
 
 from flask import Flask, render_template
+'''
+ The render_template imported above is function in Flask that is a part of the Jinja2 templating
+ engine integration. 
+ It is used to render/generate HTML templates by replacing variables and expressions in the template 
+ with actual values. This allows you to dynamically generate HTML content in your Flask web applications.
+ it will be used on 6th route
+
+'''
 
 app = Flask(__name__)
 
@@ -41,11 +49,12 @@ def Number(n):
     return '{} is a number'.format(n)
 
 
-
+# Here also they asked us to display html page only if n is an int. Thats why we made it an int
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def nbr_template(n):
-    # Render an HTML template with the number
+    # Render an HTML template with the number, where number keyword in this html page will be = n 
     return render_template('5-number.html', number=n)
+
 
 
 
