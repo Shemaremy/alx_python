@@ -31,7 +31,7 @@ def C(text):
 @app.route('/python/<text>', strict_slashes=False)
 def Python(text):
     # Replacing _ with spaces as they told us to
-    text = text.replace('_',' ')
+    text = text.replace('_', ' ')
     return 'Python {}'.format(text)
 
 
