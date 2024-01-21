@@ -28,7 +28,7 @@ def C(text):
     text = text.replace('_', ' ')
     return 'C {}'.format(text)
 
-@app.route('/python/<text>', strict_slashes=True)
+@app.route('/python/<text>', strict_slashes=False)
 def Python(text):
     # Replacing _ with spaces as they told us to
     text = text.replace('_', ' ')
