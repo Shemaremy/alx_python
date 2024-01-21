@@ -42,7 +42,6 @@ def Number(n):
 
 
 
-@app.route('/number_template/', defaults={'n': 1}, strict_slashes=False)
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def nbr_template(n):
     # Render an HTML template with the number
