@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
 
 
-@app.route('/HBNB',strict_slashes=False)
+@app.route('/HBNB')
 def HBNB():
     return 'HBNB'
 
