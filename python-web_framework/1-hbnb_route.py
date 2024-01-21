@@ -4,7 +4,9 @@
   The Flask class is a core component of Flask and is used to create a web application instance.
 
 '''
+# First line of importing flasg
 from flask import Flask
+   # After importing flask, we proceed for stage two
 
 app = Flask(__name__)
 
@@ -26,3 +28,5 @@ def HBNB():
 
 if __name__='__main__':
     app.run(host='0.0.0.0', port='5000')
+
+
