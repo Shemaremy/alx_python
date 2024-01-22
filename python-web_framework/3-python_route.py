@@ -22,14 +22,14 @@ def HBNB():
 
 @app.route('/c/<text>', strict_slashes=False)
 def C(text):
-    # Replace underscores with spaces in the text variable
+   
     text = text.replace('_', ' ')
     return 'C {}'.format(text)
 
-# Modified /python/<text> route
+
 @app.route('/python/<text>', strict_slashes=False)
 def Python(text="is cool"):
-    # Replace underscores with spaces in the text variable
+    
     text = text.replace('_', ' ')
     return 'Python {}'.format(text)
 
