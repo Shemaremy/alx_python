@@ -59,7 +59,8 @@ def users():
     # Connect to the alx_flask_db database and retrieve all users from the User table
     all_users = User.query.all()
 
-    return render_template('8-users.html', users=all_users)
+    return render_template('users.html', users=all_users)
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
