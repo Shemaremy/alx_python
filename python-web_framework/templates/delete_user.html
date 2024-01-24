@@ -1,0 +1,21 @@
+<!-- delete_user -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete User</title>
+    <style>
+        /* Similar styling as add_user.html */
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { max-width: 300px; margin: auto; }
+        button { width: 100%; margin: 5px 0; background-color: red; color: white; }
+    </style>
+</head>
+<body>
+    <h2>Delete User</h2>
+    <form action="/delete_user/{{ user.id }}" method="post">
+        <p>Are you sure you want to delete {{ user.name }}?</p>
+        <button type="submit">Delete User</button>
+    </form>
+</body>
+</html>
