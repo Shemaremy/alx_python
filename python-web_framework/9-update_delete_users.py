@@ -37,32 +37,73 @@ def index():
 def add_user():
     if request.method == 'POST':
         try:
-            
             name = request.form.get('name')
             email = request.form.get('email')
-            
-            # Create a new User instance
+
             new_user = User(name=name, email=email)
 
-            # Add the new user to the database
             db.session.add(new_user)
             db.session.commit()
 
             flash("User added successfully!", 'success')
         except Exception as e:
-            # Handle exceptions, e.g., duplicate email
             flash(f"Error adding user: {str(e)}", 'error')
-    
+
     return render_template('add_user.html')
 
 @app.route('/users')
 def users():
-    # Connect to the alx_flask_db database and retrieve all users from the User table
     all_users = User.query.all()
-
     return render_template('users.html', users=all_users)
 
+# Update a User
+@app.route('/update_user/<int:user_id>', methods=['GET', 'POST'])
+def update_user(user_id):
+    user = User.query.get(user_id)
+    if not user:
+        flash("User not found!", 'error')
+        return redirect(url_for('users'))
+
+    if request.method == 'POST':
+        try:
+            updated_name = request.form.get('name')
+            updated_email = request.form.get('email')
+
+            # Validate data
+            if not updated_name or not updated_email:
+                flash("Both name and email must be provided.", 'error')
+            else:
+                # Update the user
+                user.name = updated_name
+                user.email = updated_email
+                db.session.commit()
+
+                flash("User updated successfully!", 'success')
+        except Exception as e:
+            flash(f"Error updating user: {str(e)}", 'error')
+
+    return render_template('update_user.html', user=user)
+
+# Delete a User
+@app.route('/delete_user/<int:user_id>', methods=['GET', 'POST'])
+def delete_user(user_id):
+    user = User.query.get(user_id)
+    if not user:
+        flash("User not found!", 'error')
+        return redirect(url_for('users'))
+
+    if request.method == 'POST':
+        try:
+            # Delete the user
+            db.session.delete(user)
+            db.session.commit()
+
+            flash("User deleted successfully!", 'success')
+            return redirect(url_for('users'))
+        except Exception as e:
+            flash(f"Error deleting user: {str(e)}", 'error')
+
+    return render_template('delete_user.html', user=user)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
-
