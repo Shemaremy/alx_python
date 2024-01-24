@@ -1,0 +1,22 @@
+<!-- add_user -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User</title>
+    <style>
+        /* Inline CSS for basic styling */
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { max-width: 300px; margin: auto; }
+        input, button { width: 100%; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h2>Add User</h2>
+    <form action="/add_user" method="post">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit">Add User</button>
+    </form>
+</body>
+</html>
