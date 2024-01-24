@@ -15,6 +15,9 @@ db_host = 'localhost'
 
 app = Flask(__name__)
 
+
+
+
 ############################# TO DO 1 ############################
 # Add your code to connect to the database here
 app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql://{db_username}:{db_password}@{db_host}/{db_name}'
@@ -30,6 +33,8 @@ class User(db.Model):
     email = db.Column(db.String(100), unique=True, nullable=False)
 #################################################################
 
+
+
 # Create the database tables
 def create_tables():
     with app.app_context():
@@ -37,9 +42,14 @@ def create_tables():
 
 create_tables()  # This calls the function to create tables
 
+
+
+
+
 @app.route('/', strict_slashes=False)
 def index():
     return "Hello, ALX Flask!"
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
