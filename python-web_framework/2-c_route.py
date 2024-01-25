@@ -1,8 +1,17 @@
 '''
-  By here, we are  importing the Flask class from the flask web framework. 
-  Flask is a micro web framework for Python that simplifies the process of building web applications. 
-  The Flask class is a core component of Flask and is used to create a web application instance.
+ QUESTION (2)
 
+ Copy the previous task to a new script that starts a Flask web application:
+
+ Your web application must be listening on 0.0.0.0, port 5000
+ 
+ Routes:
+ /: display “Hello HBNB!”
+ /hbnb: display “HBNB”
+ /c/<text>: display “ C ” followed by the value of the text variable (replace underscore _ symbols with a space )
+ 
+ 
+ You must use the option strict_slashes=False in your route definition
 '''
  
  
@@ -27,7 +36,7 @@ def HBNB():
 def C(text):
     # Replace underscores with spaces in the text variable as the question tells us to
     text = text.replace('_', ' ')
-    return 'C {}'.format(text)
+    return 'C{}'.format(text)
 
 
 
