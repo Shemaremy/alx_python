@@ -34,13 +34,15 @@ it tells Flask to treat URLs with or without a trailing slash as the same.
 from flask import Flask
 
 app = Flask(__name__)
+
+
 @app.route('/', strict_slashes=False)
-
-
 def hello_hbnb():
     return 'Hello HBNB!'
 
 if __name__ == '__main__':
      
     app.run(host='0.0.0.0', port=5000)
+
+# Here, if the program is run as a main one it will run every route url that used the key 'app' to input an url on a given host and server
 

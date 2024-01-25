@@ -30,7 +30,7 @@ code for web applications more efficiently.
 ## 1. FLASK
       _____
 
-Flask is a lightweight web framework for Python. 
+Flask is a lightweight (unheavy) web framework for Python. 
 It’s designed to be simple and easy to use, 
 making it suitable for developing 
 web applications and APIs.
