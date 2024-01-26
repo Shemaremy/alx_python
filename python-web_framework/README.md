@@ -102,7 +102,7 @@ Remember to refer to the Flask documentation for detailed guidance and examples.
 
 
 
-## 5. WHAT IS A ROUTE
+## 4. WHAT IS A ROUTE
       ________________
 
 A route refers to a mapping between a URL 
@@ -135,7 +135,7 @@ Here about is a route
 
 
 
-## 6. HOW TO DEFINE ROUTES IN FLASK.
+## 5. HOW TO DEFINE ROUTES IN FLASK.
       _____________________________
 
 Look up in the file i created called Understand_routes.py
@@ -163,11 +163,42 @@ def m()
 
             
 
+## 6. HOW TO HANDLE VARIABLES IN A ROUTE
+      ----------------------------------
 
 
 
 
 
+## 7. WHAT IS A TEMPLATE AND HOW TO USE THEM
+      --------------------------------------
+
+A template is a file or string that defines the structure 
+of a web page and includes placeholders for dynamic content. 
+Web frameworks like Flask or Django use templates to 
+separate the presentation logic from the application logic. 
+This promotes a cleaner code structure and makes it easier 
+to manage and update the user interface.
+
+
+In order to access a web page using an url 
+in python, we follow these steps. Simply, when
+we run a url which is located in a python route
+it will run that html page returned by a function
+
+
+a) Create a folder named templates
+b) In that folder, create an html file with .html extension
+c) Make a normal webpage in that html file
+d) Go to your python file 
+e) Import Flask and render_template classes from flask
+f) In a route where your url that accesses your html page,
+g) Make corresponding function return that html file like on h
+h) return render_template('mypage.html')
+
+
+You can check how it works on a file I created named
+understand_templates.py
 
 
 
