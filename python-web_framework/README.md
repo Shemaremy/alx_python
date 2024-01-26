@@ -126,6 +126,12 @@ cook for you a certain meal you ordered
 Simply, a route is a concept not an app nor a 
 toolkit
 
+Lets take an example.
+We may ask ourselves why routes are defined after a slash
+The reason is because a route is that one after a domain name
+ex: remy.com/about
+Here about is a route
+
 
 
 
