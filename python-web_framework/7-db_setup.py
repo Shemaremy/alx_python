@@ -1,3 +1,9 @@
+# Imported request because its a class that helps you retrieve data from post request made in the html form
+# flask_sqlalchemy is a module that simplifies the integration of SQLAlchemy with Flask applications
+
+
+
+
 from flask import Flask, request, render_template, flash, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 import re

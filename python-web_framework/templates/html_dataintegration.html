@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Data Integration</title>
+</head>
+<body>
+    <h1>HTML Data Integration</h1>
+    <form action="/save" method="post">
+        <label for="word">Enter Word:</label>
+        <input type="text" id="word" name="word" required>
+        <button type="submit">Save</button>
+    </form>
+    <form action="/display" method="get">
+        <button type="submit">Display</button>
+    </form>
+    <form action="/clear" method="post">
+        <button type="submit">Clear</button>
+    </form>
+    {% if entries %}
+        <h2>Stored Words:</h2>
+        <ul>
+            {% for entry in entries %}
+                <li>{{ entry.word }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

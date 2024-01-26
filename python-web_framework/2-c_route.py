@@ -36,8 +36,8 @@ def HBNB():
 def C(text):
     # Replace underscores with spaces in the text variable as the question tells us to
     text = text.replace('_', ' ')
-    p = 'C',(text)
-    return p
+    return 'C {}'.format(text)
+     
 
 
 

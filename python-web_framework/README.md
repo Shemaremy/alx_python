@@ -11,7 +11,8 @@
 6. What is a template
 7. How to create a HTML response in Flask by using a template
 8. How to create a dynamic template (loops, conditions…)
-9. How to display in HTML data from a MySQL database
+9. How to display in HTML data from a MySQL database (Database Integration)
+10. flash, redirect and url_for     classes imported from flask
 
 
 
@@ -200,5 +201,127 @@ h) return render_template('mypage.html')
 You can check how it works on a file I created named
 understand_templates.py
 
+
+
+## 8. How to create a dynamic template (loops, conditions…)
+      -----------------------------------------------------
+
+Dynamic templates in the context of a Python web framework refer to a feature that allows developers to create HTML or other markup content dynamically by embedding variables and expressions within the template.(This means crating variables in python files to be used in html files as they store a certain values or data)
+
+These variables and expressions are replaced with actual values stored in python filed when the template is rendered in python ( return render_template('') )
+
+
+Visit file dynamic_templates.py file to know more
+
+
+
+## 9. How to display in HTML data from a MySQL database (Database Integration)
+       ----------------------------------------------------------------------
+
+Let's take an example to let you know what you will be doin'g after knowing well this concept. Lets take an instagram website not the app.
+
+- When you are searching people on instagram, you are retrieving usernames stored in instagram database
+- When you are creating an account, you are inserting a new row of data in instagram database
+- That instagram webpage is built and designed by html and css. The form concept (button, textbox,...)
+- The data of them is being stored in sql, by the use of python
+
+- By this concept, we will dive into how such two worlds (sql & html + css are joined by python using    SQLALCHEMY and FLASK)
+
+- Remembering that SQLAlchemy will join python with sql and then FLASK to join HTML and Python. Cool, huh?
+
+
+For further information, visit the file   pyhtml_dataintegration.py
+
+
+
+
+
+
+
+
+10. flash, redirect and url_for     classes imported from flask
+    -----------------------------------------------------------
+
+
+
+# a. flash Function:
+
+- It is used for sending one-time messages from one endpoint to another.
+- It is used to display feedback or notifications to the user after a certain action has been performed
+   (e.g., successful form submission, error messages, etc.).
+
+- Flash messages are typically stored in the session and are only available for the next request.
+
+Example:
+-------
+from flask import flash
+
+@app.route('/submit_form', methods=['POST'])
+def submit_form():
+
+    flash('Form submitted successfully!', 'success')
+    return redirect(url_for('index'))
+
+
+- The program above will give you a prompt telling you the form has been successfully submitted
+
+
+
+
+
+
+
+
+
+
+
+
+# b. url_for Function:
+   ---------------------
+
+- It is used to generate URLs for Flask routes.
+- It helps create URLs dynamically, which is useful for maintaining flexibility and avoiding hardcoded URLs
+   in your templates or code. This means to avoid writing URLs in your source codes
+
+- It takes the name of a function (the endpoint) as an argument and generates a URL for that endpoint.
+
+Example:
+--------
+from flask import url_for, redirect
+a = url_for('index')
+
+
+- An example, we have a form to input data. After inputting data, we want such form to reload
+  back at the starting/ending point. In order so as we won't modify the code and make another similar
+  router with the same url, we use url_for and redirect Functions as mentioned in file new_classes.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# c. redirect Function:
+   ---------------------
+
+- It is used to redirect the user to a different endpoint or URL.
+- It is used after processing a form submission or performing some action to redirect the user 
+   to another page.
+
+Example:
+--------
+from flask import redirect, url_for
+
+@app.route('/submit_form', methods=['POST'])
+def submit_form():
+    # Process form data...
+    return redirect(url_for('index'))
 
 
