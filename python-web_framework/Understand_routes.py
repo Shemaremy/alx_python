@@ -1,6 +1,10 @@
 # The codes below are how to define routes
 
 # The program to run a certain web application, we will need to import flask because it provides web frameworks 
+# Probably, always module names are written in small letters
+# This means flask is a module and Flask is a class from the module
+# That Class will help us in many ways
+
 from flask import Flask
  
 # To run a url, it will be inside a route. 
